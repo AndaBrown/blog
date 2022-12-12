@@ -1,0 +1,172 @@
+﻿<!doctype html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>网站跳转提示 | wzx</title>
+	<script>
+		// 判断非本机且未使用 https 时，强制重定向到 https。
+		if ((!window.location.host.startsWith("localhost")) && (window.location.protocol == "http:"))
+			window.location = window.location.toString().replace(/^http:/, "https:");
+	</script>
+
+<!--Client Worker-->
+<script>
+  if (!!navigator.serviceWorker) {
+      navigator.serviceWorker.register('/cw.js?t=' + new Date().getTime()).then(async (registration) => {
+          if (localStorage.getItem('cw_installed') !== 'true') {
+              const conf = () => {
+                  console.log('[CW] Installing Success,Configuring...');
+                  fetch('/cw-cgi/api?type=config')
+                      .then(res => res.text())
+                      .then(text => {
+                          if (text === 'ok') {
+                              console.log('[CW] Installing Success,Configuring Success,Starting...');
+                              localStorage.setItem('cw_installed', 'true');
+                              //如果你不希望重载页面，请移除下面七行
+                              //重载标识 - 开始
+                              //fetch(window.location.href).then(res => res.text()).then(text => {
+                                  //document.open()
+                                  //document.write(text);
+                                  //document.close();
+                              //});
+                              //重载标识 - 结束
+                          } else {
+                              console.warn('[CW] Installing Success,Configuring Failed,Sleeping 200ms...');
+                              setTimeout(() => {
+                                  conf()
+                              }, 200);
+                          }
+                      }).catch(err => {
+                          console.log('[CW] Installing Success,Configuring Error,Exiting...');
+                      });
+              }
+              setTimeout(() => {
+                  conf()
+              }, 50);
+          }
+      }).catch(err => {
+          console.error('[CW] Installing Failed,Error: ' + err.message);
+      });
+  } else { console.error('[CW] Installing Failed,Error: Browser not support service worker'); }
+</script>
+<!--Client Worker-->
+
+<!--51LA-->
+<script>
+  !function(p){"use strict";!function(t){var s=window,e=document,i=p,c="".concat("https:"===e.location.protocol?"https://":"http://","sdk.51.la/js-sdk-pro.min.js"),n=e.createElement("script"),r=e.getElementsByTagName("script")[0];n.type="text/javascript",n.setAttribute("charset","UTF-8"),n.async=!0,n.src=c,n.id="LA_COLLECT",i.d=n;var o=function(){s.LA.ids.push(i)};s.LA?s.LA.ids&&o():(s.LA=p,s.LA.ids=[],o()),r.parentNode.insertBefore(n,r)}()}({id:"JgqPSyTX0bBpPwXV",ck:"JgqPSyTX0bBpPwXV"});
+</script>
+<!--灵雀-->
+<script>
+  !(function(c,i,e,b){
+  var h=i.createElement("script");
+  var f=i.getElementsByTagName("script")[0];
+  h.type="text/javascript";
+  h.crossorigin=true;
+  h.onload=function(){new c[b]["Monitor"]().init({id:"Jk6zc9D356fnVo2s",sendSuspicious:true,ignoreVendor:false});};
+  f.parentNode.insertBefore(h,f);h.src=e;})(window,document,"https://sdk.51.la/perf/js-sdk-perf.min.js","LingQue");
+</script>
+<!--百度-->
+<script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?79bf7c0fda66b8c7343c49d5adf9a3fb";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+
+	<style>
+		body {margin:0;}
+		h1 {font-family:'Lato',sans-serif;font-weight:300;letter-spacing:2px;font-size:32px;}
+		p {color: #fff;font-size: 20px;}
+		urlp {color: #FFA500;font-size: 20px;}
+		atxt {color:#00f531;font-size: 16px;}
+		.header {position:relative;text-align:center;background:linear-gradient(60deg,rgba(84,58,183,1) 0%,rgba(0,172,193,1) 100%);color:white;}
+		.inner-header {height:65vh;width:100%;margin:0;padding:0;}
+		.flex {display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;}
+		.waves {position:relative;width:100%;height:15vh;margin-bottom:-7px;min-height:100px;max-height:150px;}
+		.content {position:relative;height:20vh;text-align:center;background-color:white;}
+		.parallax > use {animation:move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;}
+		.parallax > use:nth-child(1) {animation-delay:-2s;animation-duration:7s;}
+		.parallax > use:nth-child(2) {animation-delay:-3s;animation-duration:10s;}
+		.parallax > use:nth-child(3) {animation-delay:-4s;animation-duration:13s;}
+		.parallax > use:nth-child(4) {animation-delay:-5s;animation-duration:20s;}
+		@keyframes move-forever {0% {transform:translate3d(-90px,0,0);}
+		100% {transform:translate3d(85px,0,0);}
+		}
+		@media (max-width:768px) {.waves {height:40px;min-height:40px;}
+		.content {height:30vh;}
+		h1 {font-size:24px;}
+		}
+		#UrlId {color:#FF0000;font-size:20px;}
+		#UrlBack {color:#0080ff;font-size:20px;}
+	</style>
+</head>
+<body>
+	<div class="header">
+
+		<div class="inner-header flex">
+			<h1>您将在 <span id="seconds">10</span> 秒后跳转到第三方链接</h1>
+			<urlp>链接地址：<span id="urlcontent"></span><urlp>
+			<p>该链接不属于wzx，它可能包含未知的安全隐患，请谨慎访问！
+			<br/>继续访问即表示您愿意承担全部风险！</p>
+			<button><a id="UrlId" href="" onclick="Clicked()">忽略提示，直接访问</a></button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button><a id="UrlBack" href="/" onclick="Clicked()">停止跳转并返回首页</a></button>
+			<hr/>
+			<atxt>备注：若该链接在10秒内未做出任何响应或是连接失败，此窗口将自动关闭。</atxt>
+		</div>
+		<!-- 背景 -->
+		<div>
+			<svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+				<defs>
+					<path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+				</defs>
+				<g class="parallax">
+					<use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+					<use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+					<use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+					<use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+				</g>
+			</svg>
+		</div>
+
+	</div>
+</body>
+</html>
+<script>
+	// 获取当前url地址
+	var url = window.location.href;
+	// 截取传递的url参数
+	url = url.match(/url=(\S*)/)[1];
+	document.getElementById("UrlId").href = url;
+	urlcontent.innerText = url;
+	// 获取秒数显示id
+	var seconds = document.getElementById("seconds");
+	// 设置秒数
+	var flag = 0;
+	function Clicked()
+	{
+		flag = 1;
+	}
+    var num = 10;
+    var timer = setInterval(function () {
+        num--;
+        seconds.innerText = num;
+        if(num == 0 && flag == 0){
+            window.location.href= url;
+			flag = 1;
+        }
+		if(flag == 1){
+			clearInterval(timer);
+			var put_off = 10;
+			var time_delay = setInterval(function() {
+				put_off--;
+				if(put_off == 0)
+				{
+					clearInterval(time_delay);
+					window.close();
+				}
+			},1000)
+		}
+    },1000)
+</script>

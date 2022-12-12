@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://wzx.js.cool</id>
+    <title>wzx</title>
+    <updated>2022-12-12T00:41:20.813Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://wzx.js.cool"/>
+    <link rel="self" href="https://wzx.js.cool/atom.xml"/>
+    <subtitle>wzx个人网站&amp;博客</subtitle>
+    <logo>https://wzx.js.cool/images/avatar.png</logo>
+    <icon>https://wzx.js.cool/favicon.ico</icon>
+    <rights>All rights reserved 2022, wzx</rights>
+    <entry>
+        <title type="html"><![CDATA[一段代码将网站变为黑白以示哀悼]]></title>
+        <id>https://wzx.js.cool/post/R_XIZAo1t/</id>
+        <link href="https://wzx.js.cool/post/R_XIZAo1t/">
+        </link>
+        <updated>2022-12-04T01:30:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>本教程理论上适用于所有网页。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>本教程理论上适用于所有网页。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Gridea NexT主题使用MetingJS解析歌单]]></title>
+        <id>https://wzx.js.cool/post/upEtZw6iS/</id>
+        <link href="https://wzx.js.cool/post/upEtZw6iS/">
+        </link>
+        <updated>2022-11-13T12:30:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>通过本文，你可以在博客直接添加一个歌单，而无需一首一首的添加音乐。<br>
+本教程理论上同样适用于其他主题，但在细节上会有所不同。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>通过本文，你可以在博客直接添加一个歌单，而无需一首一首的添加音乐。<br>
+本教程理论上同样适用于其他主题，但在细节上会有所不同。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Gridea NexT主题自定义配置无法保存的解决方法]]></title>
+        <id>https://wzx.js.cool/post/u1yPmCRW4/</id>
+        <link href="https://wzx.js.cool/post/u1yPmCRW4/">
+        </link>
+        <updated>2022-10-22T12:30:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>近日，有多名群友遇到了类似的问题，在此，对相关问题进行说明和解决，也方便其他用户查找和参阅。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>近日，有多名群友遇到了类似的问题，在此，对相关问题进行说明和解决，也方便其他用户查找和参阅。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[网页添加动态彩带背景特效]]></title>
+        <id>https://wzx.js.cool/post/oEn0Q_3-N/</id>
+        <link href="https://wzx.js.cool/post/oEn0Q_3-N/">
+        </link>
+        <updated>2022-10-10T14:15:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>此背景特效我最初在hexo-theme-butterfly看到，感觉不错，于是分享给大家。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>此背景特效我最初在hexo-theme-butterfly看到，感觉不错，于是分享给大家。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ClientWorker——用黑科技给你的网站加速]]></title>
+        <id>https://wzx.js.cool/post/WXgNGijX/</id>
+        <link href="https://wzx.js.cool/post/WXgNGijX/">
+        </link>
+        <updated>2022-08-31T10:43:53.000Z</updated>
+        <summary type="html"><![CDATA[<p>ClientWorker，一个基于规则驱动的前端路由拦截器，用规则定义黑科技。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>ClientWorker，一个基于规则驱动的前端路由拦截器，用规则定义黑科技。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Vercel子域名遭受DNS污染和SNI阻断]]></title>
+        <id>https://wzx.js.cool/post/uv-b_AhzT/</id>
+        <link href="https://wzx.js.cool/post/uv-b_AhzT/">
+        </link>
+        <updated>2022-08-27T05:30:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>很不幸的消息，Vercel免费提供的子域名vercel.app于2022年8月再度遭受到了DNS污染和SNI阻断，中国大陆地区已无法访问。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>很不幸的消息，Vercel免费提供的子域名vercel.app于2022年8月再度遭受到了DNS污染和SNI阻断，中国大陆地区已无法访问。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[调用Microsoft Edge打开特定链接]]></title>
+        <id>https://wzx.js.cool/post/mn_4JeOfC/</id>
+        <link href="https://wzx.js.cool/post/mn_4JeOfC/">
+        </link>
+        <updated>2022-08-12T03:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>当微软推出Windows 10时，微软连同系统一起推出了经典版本的 Edge，Edge 也顺势取代了老旧的 IE 浏览器。为了推动 Edge，微软开发了一个microsoft-edge://协议，并开始在 Windows 系统自带的应用中使用它，该协议被设计为只在 Edge 中打开对应的链接。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>当微软推出Windows 10时，微软连同系统一起推出了经典版本的 Edge，Edge 也顺势取代了老旧的 IE 浏览器。为了推动 Edge，微软开发了一个microsoft-edge://协议，并开始在 Windows 系统自带的应用中使用它，该协议被设计为只在 Edge 中打开对应的链接。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Gridea NexT自定义鼠标右键菜单]]></title>
+        <id>https://wzx.js.cool/post/ZYHBCHMis/</id>
+        <link href="https://wzx.js.cool/post/ZYHBCHMis/">
+        </link>
+        <updated>2022-08-01T02:30:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>给你的博客添加自定义鼠标右键菜单！如果这篇文章对你有帮助，还请打赏支持一下🙏！</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>给你的博客添加自定义鼠标右键菜单！如果这篇文章对你有帮助，还请打赏支持一下🙏！</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[初柒科技 || “扬帆起航”LOGO设计活动]]></title>
+        <id>https://wzx.js.cool/post/Ix3aEhNOz/</id>
+        <link href="https://wzx.js.cool/post/Ix3aEhNOz/">
+        </link>
+        <updated>2022-07-17T15:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote>
+<p>为了庆祝武汉初柒网络科技有限公司开业，推出本期“扬帆起航”LOGO设计活动，帮助各位博主免费设计LOGO，提高知名度。logo即标志，它是活动的标志和象征，它体现着活动中的精神与文化。</p>
+</blockquote>
+]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>为了庆祝武汉初柒网络科技有限公司开业，推出本期“扬帆起航”LOGO设计活动，帮助各位博主免费设计LOGO，提高知名度。logo即标志，它是活动的标志和象征，它体现着活动中的精神与文化。</p>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[wzx个人主页上线啦！]]></title>
+        <id>https://wzx.js.cool/post/RZOTsRp52/</id>
+        <link href="https://wzx.js.cool/post/RZOTsRp52/">
+        </link>
+        <updated>2022-07-16T05:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>重要通知，请认真阅读！</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>重要通知，请认真阅读！</p>
+]]></content>
+    </entry>
+</feed>
