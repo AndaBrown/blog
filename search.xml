@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>新手建站（二）：选择一个合适的服务器配置</title>
+      <link href="/post/739f0a30/"/>
+      <url>/post/739f0a30/</url>
+      
+        <content type="html"><![CDATA[<h2 id="服务器是什么">服务器是什么</h2><p>服务器通常以网络作为介质，既可以通过内部网对内提供服务，也可以通过互联网对外提供服务。服务器的最大特点就是其强大的运算能力或是具备大量磁盘存储空间的电脑，使其能在短时间内完成大量工作及负载大量的文件资料存储，并为大量用户提供服务。</p><p>20世纪90年代之后，随着调制解调器技术的发展，互联网由窄带的电话拨接，升级成为宽带网络，这代表着以信息高速公路为象征的网络新时代来临。互联网普及同时改变了电脑用户习惯，更大大普及网络联系传讯的方式，从文字到图片，再到视频，服务器所能完成的工作也越来越复杂；而云端计算、大数据时代造就了各种新类型行业，如网络商店、网络电商、网络拍卖、网络销售、网络游戏、网站设计、网站架设、博客，以及越来越普遍性的云端数据库或备份库。</p><p>标准服务器（server）及文件服务器（NAS）的普及正在时时优化及改变现有人类的生活。</p><h2 id="选择服务器配置">选择服务器配置</h2><p>云服务器所包含的内容很多，需要从<strong>地域</strong>、<strong>计费方式</strong>、<strong>CPU、内存</strong>、<strong>带宽</strong>、<strong>系统盘</strong>、<strong>数据盘</strong>等多个方面选择，选择好以后，就搭配出一套自定义的实例就能完成使用。</p><h3 id="地域">地域</h3><p>地域的选择遵循就近原则。理论上，用户距离云服务器地域越近，网络延迟越低，速度越快，所以根据用户群所在地区选择地域。</p><div class="note warning flat"><p>如果服务器地域选择是大陆地区，需要备案的，如果想免备案，可选择中国香港或者国外地域的服务器，比如美国或新加坡等等。</p></div><h3 id="计费方式">计费方式</h3><p>计费方式指的是租用云服务器所需要的费用，一般分为包年包月、按量计费。其中包年包月是使用最多的，同时也是性价比最高的一种方式。不过还是根据业务使用情况来确定，区别是包年包月是先付费，按量计费是后付费的一种方式。</p><ul><li>包年包月指的是一种预付费的模式，也就是先付费后使用。一般适用于24小时在线的服务，比如web服务，搭建的网站需要24小时在线。</li><li>按量计费指的是在云服务器使用过程中，按每小时实际使用的流量来支付费用，它是一种先使用后付费的模式，这种付费方式：适用于平时带宽使用较低但会间歇出现网络访问高峰的场景，比如需要临时业务量上升、临时测试、科学计算等。</li></ul><blockquote><p>若无特殊需求，建议按包年包月计费。</p></blockquote><h3 id="规格配置">规格配置</h3><ol><li><p>CPU</p><p>CPU是服务器的一个核心，表示云服务器的运算能力。CPU数量越多，主频越高，CPU性能越优越，对业务处理的能力也就越高，因而用户在选择上最好依据实际的情况考虑。</p></li><li><p>内存</p><p>内存作为数据的中转站，内存越大，可用缓存也就越大，如果是网站，打开速度也就越快。</p></li><li><p>云服务器的配置取决于业务需求。</p><ul><li>一般来说对于访问量较小的个人网站，访客不会很多，<code>1核2G</code>更合适，当然这种轻量级业务，选择轻量应用服务器无疑是最爽的，同价位下，配置越高。</li><li><code>2核4G</code>的配置可满足大多数的用户需求，比如中小企业运营、一般性数据处理、并行计算处理等。</li><li>对于一些对计算性能要求较高的业务，比如中大型运营活动、大型论坛、网页游戏、批量处理、ERP系统，APP应用等，则需要更高的CPU核数和内存，比如说<code>4核8G</code>。</li></ul></li><li><p>系统盘</p><p>系统盘是用来存储云服务器系统的，和家用电脑的C盘差不多，购买的服务器默认会提供的系统盘一般为40G；当选择镜像安装云服务器操作系统时，系统是直接保存在系统盘的，随云服务器一起创建和释放。如果更换操作系统，系统盘数据会被清空。</p><p>系统盘只能有1个，创建云服务器时必须要有系统盘。比较推荐大家选择读写速度更快的数据盘，系统盘可以选择SSD类型的；性能方面 <code>ESSD云盘</code> &gt; <code>SSD云盘</code> &gt; <code>高效云盘</code> &gt; <code>普通云盘</code> 。当然 <code>ESSD云盘</code>与 <code>SSD云盘</code> 存储性能差距不大， <code>高效云盘</code> 要弱一些。</p></li><li><p>数据盘</p><p>数据盘是用户自行创建的，可以和购买云服务器时一起创建，也可以单独创建数据盘。一般数据小于20个G是不用去买数据盘的，放在系统盘即可，系统盘也可以回滚快照，和数据盘是一样的，所以不用担心数据丢失的问题，数据盘是给数据比较大的客户用的。</p></li></ol><h2 id="选择一个靠谱的服务器厂商">选择一个靠谱的服务器厂商</h2><h3 id="排除小型服务器商">排除小型服务器商</h3><p>IDC搭建系统源码现在是全网泛滥状态，懂一些网站鸡皮蒜毛都能成为服务器商，如今搭建服务器出售系统门栏低，不靠谱的服务器也就多了起来。例如什么九云主机，一主机，时代云之类的服务器商，类似这种三无服务器商首先pass掉，都是用三方源码搭建的，跑不跑路完全看心情，就怕哪一天心情不好给你个惊喜。</p><h3 id="避免选择代理服务器商">避免选择代理服务器商</h3><p>中小型服务器商很少是自建机房的，大多采用代理或者分销方式出售服务器，这类服务器商也尽量不要去使用，他们赚的是代理的钱，如果使用过程中服务器出现了什么问题都是找不到人的，售后方面完全不靠谱，卖的只是服务器无服务。</p><h2 id="国外高性价比服务器厂商推荐">国外高性价比服务器厂商推荐</h2><h3 id="国外大厂">国外大厂</h3><p>国外权威厂商，企业建站的首选，不再过多介绍了：</p><ul><li><a href="https://cloud.google.com/">Google Cloud</a></li><li><a href="https://azure.microsoft.com/">Microsoft Azure</a></li><li><a href="https://aws.amazon.com/">Amazon Web Services</a></li><li><a href="https://www.digitalocean.com/">Digital Ocean</a></li><li><a href="https://www.oracle.com/">Oracle Cloud</a></li></ul><h3 id="BandwagonHost（搬瓦工）">BandwagonHost（搬瓦工）</h3><p>搬瓦工VPS，隶属于美国IT7公司旗下的一款低价KVM、OpenVZ VPS主机方案，官方名称为BandwagonHost，读起来有点类似“Ban Wa Gong”的汉语拼音，所以我们国内的站长喜欢称作为“搬瓦工”。搬瓦工VPS是一款性价比较高的便宜VPS主机，且适合入门级网友学习建站及测试用途。</p><p>全部采用OpenVZ、KVM架构的Linux系统环境，支持CentOS、Debian、Ubuntu等30多个常见系统版本。且不限制重装系统次数（有些商家每天/月都有限制安装次数的），这样对于新手学习VPS，有需要多次安装是一个不错的选择。对于国内的朋友来说目前<strong>支持使用支付宝支付</strong>，还是挺方便的。</p><p><a href="https://bandwagonhost.com/aff.php?aff=74528"><strong>注册地址</strong></a></p><h3 id="Vultr">Vultr</h3><p>Vultr是一家成立于2008年的美国云主机商，按小时付费，可以任意切换IP，因此受到不少用户的追捧。现在规模也是相当大的，因为可以免费随意切换IP，因此在全球还是有不少用户的。</p><p>Vultr采用的是按小时计费的方式，使用前先充值，最低充值金额是10美元。Vultr价格比较便宜，普通VPS最低配置套餐是5美元/月。根据配置不同，价格是不一样的。高性能的VPS价格最低是6美元/月。</p><p>Vultr提供了<strong>支付宝</strong>、<strong>微信</strong>、<strong>PayPal</strong>、<strong>信用卡</strong>等多种付款方式，购买还是比较简单。</p><p><a href="https://www.vultr.com/?ref=9604982"><strong>注册地址</strong></a></p><h3 id="RackNerd">RackNerd</h3><p>RackNerd是一家2019年成立的国外VPS主机商，国人又简称为RN。提供包括虚拟主机、VPS、Hybrid Dedicated Servers和独立服务器租用等产品，数据中心可选择美国洛杉矶、西雅图、圣何塞、芝加哥、达拉斯、纽约和荷兰阿姆斯特丹等等。</p><p>RackNerd支持<strong>支付宝</strong>、<strong>PayPal</strong>、<strong>信用卡</strong>、<strong>银联开</strong>、<strong>比特币</strong>等支付方式，购买还是比较方便的。</p><p><a href="https://my.racknerd.com/aff.php?aff=11313"><strong>注册地址</strong></a></p><h3 id="DMIT">DMIT</h3><p>DMIT是一家专门经营海外VPS的主机商，成立于2017年，其VPS都以速度快著称，专门提供优质CN2 GIA线路VPS产品，在国内口碑非常的好，用户很多，经常卖断货。DMIT目前有两个数据中心：香港和美国洛杉矶，这两个数据中心都提供了CN2 GIA线路，延迟低、速度快，很受用户欢迎。</p><p>DMIT提供了<strong>支付宝</strong>、<strong>PayPal</strong>和<strong>信用卡</strong>的付款方式，国内用户购买也比较方便。</p><p><a href="https://www.dmit.io/aff.php?aff=8870"><strong>注册地址</strong></a></p><h3 id="CloudCone">CloudCone</h3><p>CloudCone是quadcone（成立于2012年）旗下的品牌，成立于2017年。提供基于KVM虚拟化的VPS产品以及独立服务器租用，数据中心在洛杉矶multacom机房（MC机房），产品支持按小时计费，可以随时自行删除机器，余额退回账户，<strong>支持支付宝</strong>等付款方式，价格便宜。国外售卖MC机房VPS的商家不多，支持按小时计费的MC机房VPS的就更少了。</p><p><a href="https://app.cloudcone.com/?ref=11250"><strong>注册地址</strong></a></p><h2 id="参考资料">参考资料</h2><p><a href="https://zh.wikipedia.org/wiki/%E6%9C%8D%E5%8A%A1%E5%99%A8">维基百科：服务器</a></p><p><a href="https://www.zhihu.com/tardis/zm/art/447914035">知乎：如何选择云服务器配置？</a></p><p><a href="https://zhuanlan.zhihu.com/p/338802568">知乎：稳定靠谱的国内云服务器/国外VPS云服务器商家整理推荐</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 建站 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 建站 </tag>
+            
+            <tag> 服务器 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>New Bing高级用法！绕开限制！</title>
       <link href="/post/f82f332a/"/>
       <url>/post/f82f332a/</url>
@@ -33,7 +60,7 @@
     
     
     <entry>
-      <title>新手网站：从一个有意义的域名开始</title>
+      <title>新手建站（一）：从一个有意义的域名开始</title>
       <link href="/post/dd83a796/"/>
       <url>/post/dd83a796/</url>
       
