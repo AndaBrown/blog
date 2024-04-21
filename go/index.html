@@ -505,7 +505,7 @@
         }
         var jump_url = Base64.decode(location.hash.slice(1));
         if (jump_url == '') jump_url=Base64.decode(window.location.search.substr(1));
-        const safeurl=["zh.wikipedia.org"];
+        const safeurl=["zh.wikipedia.org","github.com"];
         if (safeurl.length !== 0) {
           safe=false
           for (let i = 0; i < safeurl.length; i++) {
