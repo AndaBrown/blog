@@ -1,69 +1,399 @@
 <!doctype html>
-<html lang="zh-cn">
+<html data-user-color-scheme="dark" lang="zh-cn">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>跳转安全提示</title>
-    <style>
+    <title>跳转安全提示 | Auriel</title>
+    <link rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_1736178_lbnruvf0jn.css" />
+    <style type="text/css">
+        /* 向上渐隐显示(主内容使用) */
+        @-webkit-keyframes fadeInUp {
+          0% {
+            opacity: 0;
+            transform: translateY(24px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(-80px);
+          }
+        }
+        @keyframes fadeInUp {
+          0% {
+            opacity: 0;
+            -webkit-transform: translateY(24px);
+            -ms-transform: translateY(24px);
+            transform: translateY(24px);
+          }
+          100% {
+            opacity: 1;
+            -webkit-transform: translateY(-80px);
+            -ms-transform: translateY(-80px);
+            transform: translateY(-80px);
+          }
+        }
+        /* 向上渐隐显示(成功错误提示) */
+        @-webkit-keyframes alertFadeInUp {
+          0% {
+            opacity: 0;
+            transform: translateY(24px);
+          }
+          75% {
+            opacity: 1;
+            transform: translateY(0);
+          }
+          100% {
+            opacity: 0;
+          }
+        }
+        @keyframes alertFadeInUp {
+          0% {
+            opacity: 0;
+            -webkit-transform: translateY(24px);
+            -ms-transform: translateY(24px);
+            transform: translateY(24px);
+          }
+          75% {
+            opacity: 1;
+            -webkit-transform: translateY(0);
+            -ms-transform: translateY(0);
+            transform: translateY(0);
+          }
+          100% {
+            opacity: 0;
+          }
+        }
+        @-webkit-keyframes fadeOutUp {
+          0% {
+            opacity: 1;
+          }
+          to {
+            opacity: 0;
+            transform: translate3d(0, -350%, 0);
+          }
+        }
+        @keyframes fadeOutUp {
+          0% {
+            opacity: 1;
+          }
+          to {
+            opacity: 0;
+            -webkit-transform: translate3d(0, -350%, 0);
+            transform: translate3d(0, -350%, 0);
+          }
+        }
+  
+        :root {
+          --blue: #007bff;
+          --indigo: #6610f2;
+          --purple: #6f42c1;
+          --pink: #e83e8c;
+          --red: #dc3545;
+          --orange: #fd7e14;
+          --yellow: #ffc107;
+          --green: #28a745;
+          --teal: #20c997;
+          --cyan: #17a2b8;
+          --white: #fff;
+          --gray: #6c757d;
+          --gray-dark: #343a40;
+          --primary: #007bff;
+          --secondary: #6c757d;
+          --success: #28a745;
+          --info: #17a2b8;
+          --warning: #ffc107;
+          --danger: #dc3545;
+          --light: #f8f9fa;
+          --dark: #343a40;
+          --breakpoint-xs: 0;
+          --breakpoint-sm: 576px;
+          --breakpoint-md: 768px;
+          --breakpoint-lg: 992px;
+          --breakpoint-xl: 1200px;
+          --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI",
+            "PingFang SC", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+            "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+            "Segoe UI Symbol", "Noto Color Emoji";
+          --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+            "Liberation Mono", "Courier New", monospace;
+        }
+  
+        [data-user-color-scheme="dark"] {
+          --body-bg-color: #22272e;
+          --board-bg-color: #2b313a;
+          --text-color: #adbac7;
+          --sec-text-color: #b3bac1;
+          --post-text-color: #adbac7;
+          --post-heading-color: #adbac7;
+          --post-link-color: #44a9fc;
+          --post-danger-link-color: #ff8b48;
+          --link-hover-color: #2500c8;
+          --link-danger-hover-color: #c70000;
+          --link-hover-bg-color: #22272e;
+          --line-color: #adbac7;
+          --navbar-bg-color: #22272e;
+          --navbar-text-color: #cbd4dc;
+          --subtitle-color: #cbd4dc;
+          --scrollbar-color: #30a9de;
+          --scrollbar-hover-color: #34a3ff;
+          --button-bg-color: transparent;
+          --button-hover-bg-color: #46647e;
+          --highlight-bg-color: #2d333b;
+          --inlinecode-bg-color: rgba(99, 110, 123, 0.4);
+        }
+        ::-webkit-scrollbar {
+          width: 6px;
+          height: 6px;
+        }
+        ::-webkit-scrollbar-corner {
+          background-color: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+          background-color: var(--scrollbar-color);
+          border-radius: 6px;
+        }
+
         html {
-            background: #f4f5f5;
+          -webkit-text-size-adjust: 100%;
+          -webkit-tap-highlight-color: transparent;
         }
-        #box {
-            margin: auto;
-            background: #fff;
-            padding: 10px 30px;
-            margin-top: 10%;
-            max-width: 500px;
-            box-sizing: border-box;
-            border: 1px solid #e5e6eb;
-            border-radius: 2px;
+        html,
+        body {
+          font-family: var(--font-family-sans-serif);
+          padding: 0;
+          margin: 0;
+          background-color: var(--body-bg-color);
+          color: var(--text-color);
+          transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+          height: 100%;
         }
-        .note {
-            font-size: 18px;
-            line-height: 20px;
+        body {
+          font-size: 14px;
         }
-        .link {
-            padding: 16px 0 24px;
-            border-bottom: 1px solid #e5e6eb;
-            position: relative;
-            color: gray;
-            font-family: "PingFang SC";
-            font-size: 14px;
-            word-break: break-all;
+        p,
+        div {
+          padding: 0;
+          margin: 0;
         }
-        .btn-plane {
-           text-align: right;
+        a {
+          text-decoration: none;
+          transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
         }
-        .cancel {
-            margin-top: 20px;
-            color: #fff;
-            border-radius: 3px;
-            border: none;
-            background: #007fff;
-            height: 32px;
-            font-size: 14px;
-            padding: 0 14px;
-            cursor: pointer;
-            outline: 0;
+        body a:hover {
+          color: #20c997;
+          text-decoration: none;
         }
-        .confirm {
-            margin-top: 20px;
-            color: #fff;
-            border-radius: 3px;
-            border: none;
-            background: #ff2600;
-            height: 32px;
-            font-size: 14px;
-            padding: 0 14px;
-            cursor: pointer;
-            outline: 0;
+        .go-page {
+          height: 100%;
         }
-        button a{
-            color: #fff;
-            text-decoration:none
+        .content {
+          /* padding-top: 220px; */
+          width: 450px;
+          margin: auto;
+          word-break: break-all;
+          height: 100%;
         }
-    </style>
+        .content .logo-img {
+          margin-bottom: 25px;
+          text-align: center;
+          padding-top: 25%;
+        }
+        .content .logo-img img {
+          display: block;
+          width: 200px;
+          height: 75px;
+          margin: auto;
+          margin-bottom: 20px;
+        }
+  
+        .content .loading-item {
+          background: #fff;
+          padding: 24px;
+          border-radius: 12px;
+          border: 1px solid #e1e1e1;
+          margin-bottom: 10px;
+        }
+        /* 绿色 */
+        .content .tip1 {
+          background: #f0f9ea;
+        }
+        /* 黄色 */
+        .content .tip2 {
+          background: #fdf5e6;
+        }
+        /* 红色 */
+        .content .tip3 {
+          background: #fef0f0;
+        }
+        .content .icon-snapchat-fill {
+          font-size: 20px;
+          color: var(--post-danger-link-color);
+          border: 1px solid var(--post-danger-link-color);
+          border-radius: 50%;
+          width: 32px;
+          text-align: center;
+          margin-right: 5px;
+        }
+        .content .tip1 .icon-snapchat-fill {
+          color: var(--post-link-color);
+          border-color: var(--post-link-color);
+        }
+        .content .loading-text {
+          font-size: 16px;
+          font-weight: 600;
+          color: #222226;
+          line-height: 22px;
+          /* margin-left: 12px; */
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+        .content .flex {
+          display: flex;
+          align-items: center;
+        }
+        .content .flex-end {
+          display: flex;
+          justify-content: flex-end;
+        }
+        /* 蓝色 */
+        .content .loading-color1 {
+          color: var(--post-link-color);
+        }
+        .content .loading-color2 {
+          color: var(--post-danger-link-color);
+        }
+        .content .loading-tip {
+          padding: 12px;
+          margin-bottom: 16px;
+          border-radius: 4px;
+        }
+        .content .loading-topic {
+          font-size: 14px;
+          color: #222226;
+          line-height: 24px;
+          margin-bottom: 24px;
+        }
+        .loading-topic .flex {
+          flex-direction: column;
+        }
+        .content .loading-img {
+          width: 24px;
+          height: 24px;
+        }
+        .content .loading-btn {
+          font-size: 14px;
+          color: var(--post-link-color);
+          border: 1px solid var(--post-link-color);
+          display: inline-block;
+          box-sizing: border-box;
+          padding: 6px 18px;
+          border-radius: 18px;
+          margin-left: 8px;
+        }
+        .content .warning-btn {
+          font-size: 14px;
+          color: var(--post-danger-link-color);
+          border: 1px solid var(--post-danger-link-color);
+          display: inline-block;
+          box-sizing: border-box;
+          padding: 6px 18px;
+          border-radius: 18px;
+          margin-left: 8px;
+        }
+        .content .loading-btn:hover {
+          color: var(--link-hover-color);
+          border-color: var(--link-hover-color);
+        }
+        .content .warning-btn:hover {
+          color: var(--link-danger-hover-color);
+          border-color: var(--link-danger-hover-color);
+        }
+        /*.content .loading-btn-github {
+          width: 121px;
+          background: var(--post-danger-link-color);
+          color: #fff;
+        }*/
+        .hidden {
+          display: none;
+        }
+        /*.form-control.hidden {
+          display: none !important;
+        }
+        .mp-img-box {
+          text-align: center;
+          margin-bottom: 10px;
+        }
+        .mp-img {
+          max-width: 400px;
+          width: 100%;
+          box-shadow: 5px 5px 15px rgb(0 0 0 / 8%);
+          margin-bottom: 5px;
+        }*/
+        .fadeInUp {
+          -webkit-animation-name: fadeInUp;
+          animation-name: fadeInUp;
+        }
+        .alertFadeInUp {
+          -webkit-animation-name: alertFadeInUp;
+          animation-name: alertFadeInUp;
+          -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+          -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+        }
+        .fadeOutUp {
+          -webkit-animation-name: fadeOutUp;
+          animation-name: fadeOutUp;
+        }
+        .fade-animate {
+          -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+          -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+          -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+        }
+        /*.go-alert {
+          margin: 0 auto;
+          width: 110px;
+          position: absolute;
+          left: 46%;
+          top: 5%;
+          opacity: 0;
+          text-align: center;
+        }*/
+        .footer {
+          text-align: center;
+          position: relative;
+          margin-bottom: 20px;
+        }
+        .footer a {
+          color: var(--text-color);
+        }
+  
+        .flex-box {
+          display: flex;
+          height: 100vh;
+          flex-direction: column;
+        }
+        .flex-contain {
+          flex: 1;
+        }
+        .flex-footer {
+          height: 24px;
+        }
+  
+        @media (max-width: 767.98px) {
+          .content {
+            width: 94%;
+          }
+          .content .logo-img {
+            padding-top: 80px;
+          }
+        }
+      </style> 
     <!--Google Analytics(gtag)-->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-WVK0S6H59D"></script>
     <script>
@@ -100,85 +430,111 @@
     </script>
 </head>
 <body>
-<div id="box">
-    <p class="note" id="note">即将跳转到第三方链接，请注意账号财产安全</p>
-    <p class="link" id="link"></p>
-    <p class="btn-plane">
-        <button class="cancel"><a href="javascript:closePage();">关闭页面</a></button>
-        <button class="confirm"><a href="" id="url" rel="nofollow">继续访问</a></button>
-    </p>
-</div>
-<script type="text/javascript">
-    window.onload=function(){
-    const host=window.location.host;
-    var Base64 = {
-        _keyStr: "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=",
-        decode: function(e) {
-            var t = "";
-            var n, r, i;
-            var s, o, u, a;
-            var f = 0;
-            e = e.replace(/[^A-Za-z0-9+/=]/g, "");
-            while (f < e.length) {
-                s = this._keyStr.indexOf(e.charAt(f++));
-                o = this._keyStr.indexOf(e.charAt(f++));
-                u = this._keyStr.indexOf(e.charAt(f++));
-                a = this._keyStr.indexOf(e.charAt(f++));
-                n = s << 2 | o >> 4;
-                r = (o & 15) << 4 | u >> 2;
-                i = (u & 3) << 6 | a;
-                t = t + String.fromCharCode(n);
-                if (u != 64) {
-                    t = t + String.fromCharCode(r)
+    <div id="goPage" class="go-page">
+        <div class="content">
+            <div class="flex-box">
+                <div class="flex-contain">
+                    <div class="logo-img">
+                        <img src="/icon/aurieltop.png">
+                        <p class="name" style="font-size: 22px;">跳转安全提示</p>
+                        <p class="description">您点击了一个外部链接，为了保证您的安全，我们会对链接进行检测</p>
+                    </div>
+                    <div class="loading-item loading-safe flex">
+                        <i class="iconfont icon-snapchat-fill"></i>
+                        <div class="loading-text">正在进行安全性检测，请稍后...</div>
+                    </div>
+                    <div class="go-box"><p id="box"></p></div>
+                </div>
+                <div class="footer flex-footer">
+                    Copyright ©2021-2024 <a href="https://www.auriel.top/" class="name"><span>Auriel</span>.</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        const host=window.location.host;
+        var Base64 = {
+            _keyStr: "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=",
+            decode: function(e) {
+                var t = "";
+                var n, r, i;
+                var s, o, u, a;
+                var f = 0;
+                e = e.replace(/[^A-Za-z0-9+/=]/g, "");
+                while (f < e.length) {
+                    s = this._keyStr.indexOf(e.charAt(f++));
+                    o = this._keyStr.indexOf(e.charAt(f++));
+                    u = this._keyStr.indexOf(e.charAt(f++));
+                    a = this._keyStr.indexOf(e.charAt(f++));
+                    n = s << 2 | o >> 4;
+                    r = (o & 15) << 4 | u >> 2;
+                    i = (u & 3) << 6 | a;
+                    t = t + String.fromCharCode(n);
+                    if (u != 64) {
+                        t = t + String.fromCharCode(r)
+                    }
+                    if (a != 64) {
+                        t = t + String.fromCharCode(i)
+                    }
                 }
-                if (a != 64) {
-                    t = t + String.fromCharCode(i)
+                t = Base64._utf8_decode(t);
+                return t
+            },
+            _utf8_decode: function(e) {
+                var t = "";
+                var n = 0;
+                var r = c1 = c2 = 0;
+                while (n < e.length) {
+                    r = e.charCodeAt(n);
+                    if (r < 128) {
+                        t += String.fromCharCode(r);
+                        n++
+                    } else if (r > 191 && r < 224) {
+                        c2 = e.charCodeAt(n + 1);
+                        t += String.fromCharCode((r & 31) << 6 | c2 & 63);
+                        n += 2
+                    } else {
+                        c2 = e.charCodeAt(n + 1);
+                        c3 = e.charCodeAt(n + 2);
+                        t += String.fromCharCode((r & 15) << 12 | (c2 & 63) << 6 | c3 & 63);
+                        n += 3
+                    }
                 }
+                return t
             }
-            t = Base64._utf8_decode(t);
-            return t
-        },
-        _utf8_decode: function(e) {
-            var t = "";
-            var n = 0;
-            var r = c1 = c2 = 0;
-            while (n < e.length) {
-                r = e.charCodeAt(n);
-                if (r < 128) {
-                    t += String.fromCharCode(r);
-                    n++
-                } else if (r > 191 && r < 224) {
-                    c2 = e.charCodeAt(n + 1);
-                    t += String.fromCharCode((r & 31) << 6 | c2 & 63);
-                    n += 2
-                } else {
-                    c2 = e.charCodeAt(n + 1);
-                    c3 = e.charCodeAt(n + 2);
-                    t += String.fromCharCode((r & 15) << 12 | (c2 & 63) << 6 | c3 & 63);
-                    n += 3
-                }
-            }
-            return t
         }
+        var jump_url = Base64.decode(location.hash.slice(1));
+        if (jump_url == '') jump_url=Base64.decode(window.location.search.substr(1));
+        const safeurl=["zh.wikipedia.org"];
+        if (safeurl.length !== 0) {
+          safe=false
+          for (let i = 0; i < safeurl.length; i++) {
+            const ele = safeurl[i];
+            if (jump_url.includes(ele)) {
+              safe = true;
+              box.innerHTML = '<div class="loading-item"><div class="flex loading-tip tip1"><i class="iconfont icon-snapchat-fill false"></i><div class="loading-text">该链接已通过安全检测，正在自动跳转</div></div><div class="loading-topic"><span>正在跳转至：</span><a class="loading-color1 go-url">'+jump_url+'</a><span>，请稍后...</span></div><div class="flex-end"><a rel="noopener external nofollow noreferrer" class="loading-btn" href="" id="url">立即跳转</a></div></div>';
+              document.getElementById("url").href = jump_url;
+              const loadingItem = document.querySelector(".go-box .loading-item"),loadingSafe = document.querySelector(".loading-safe");
+              loadingSafe.classList.add("fadeOutUp", "fade-animate"),loadingItem.classList.remove("hidden"),loadingItem.classList.add("fadeInUp", "fade-animate");
+              setTimeout(function link_jump(){ window.location.href = jump_url },3000);
+              break;
+            }
+          }
+          if(!safe){
+            box.innerHTML = '<div class="loading-item"><div class="flex loading-tip tip2"><i class="iconfont icon-snapchat-fill false"></i><div class="loading-text">该链接安全性未知，请注意账号财产安全</div></div><div class="loading-topic"><span>您即将离开Auriel，去往：</span><a class="loading-color2 go-url">'+jump_url+'</a></div><div class="flex-end"><a class="loading-btn" href="javascript:closePage();" >关闭页面</a><a rel="noopener external nofollow noreferrer" class="warning-btn" href="" id="url">继续访问</a></div></div>';
+            document.getElementById("url").href = jump_url;
+            const loadingItem = document.querySelector(".go-box .loading-item"),loadingSafe = document.querySelector(".loading-safe");
+            loadingSafe.classList.add("fadeOutUp", "fade-animate"),loadingItem.classList.remove("hidden"),loadingItem.classList.add("fadeInUp", "fade-animate");
+          }
     }
-    var jump_url=Base64.decode(location.hash.slice(1));
-    if(jump_url=='')jump_url=Base64.decode(window.location.search.substr(1));
-    document.getElementById("url").href = jump_url;
-    link.innerText = "您即将离开Auriel，去往：" + jump_url;
-    if(jump_url.match(/http(?:s)?:\/\/.+/i)===null){
-        document.title='参数错误，正在返回首页...';
-        document.getElementById('note').innerHTML=document.title;
-        setTimeout(function link_jump(){window.location.href=location.origin},1000);
+    if( jump_url.match(/http(?:s)?:\/\/.+/i) == null ){
+        box.innerHTML = '<div class="loading-item loading-error fadeInUp fade-animate"><div class="flex loading-tip tip2"><i class="iconfont icon-snapchat-fill false"></i><div class="loading-text">链接参数错误，正在返回首页</div></div><div class="loading-topic"><span>您点击的链接似乎包含无效参数，正在返回网站首页。您可以向我们报告问题或稍后重试。</span></div></div>';
+        setTimeout(function link_jump(){ window.location.href = "https://blog.auriel.top/" },3000);
     }
-    }
-    function closePage() {
-        // 通用窗口关闭  
+    function closePage() { // 通用窗口关闭  
         window.opener=null;  
         window.open('','_self');  
         window.close();
-        // 微信浏览器关闭  
-        WeixinJSBridge.call('closeWindow');  
     }
-</script>
+    </script>
 </body>
-</html>

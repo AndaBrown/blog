@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>新手建站（四）：选择一个心仪的内容管理系统</title>
+      <link href="/post/d4550abf/"/>
+      <url>/post/d4550abf/</url>
+      
+        <content type="html"><![CDATA[<h2 id="什么是CMS？">什么是CMS？</h2><p>内容管理系统（英语：content management system，缩写为 CMS）是指在一个合作模式下，用于管理工作流程的一套制度。该系统可应用于手工操作中，也可以应用到电脑或网络里。作为一种中央储存器，可将相关内容集中储存并具有群组管理、版本控制等功能。版本控制是内容管理系统的一个主要优势。</p><p>内容管理系统在物品或文案或数据的存储、掌管、修订（盘存）、语用充实、文档发布等方面有着广泛的应用。</p><h2 id="静态网页和动态网页">静态网页和动态网页</h2><h3 id="静态网页">静态网页</h3><p>静态网页是指存放在服务器文件系统中实实在在的HTML文件。当用户在浏览器中输入页面的URL，然后回车，浏览器就会将对应的html文件下载、渲染并呈现在窗口中。</p><ul><li>静态网页每个网页都有一个固定的URL，且网页URL以<code>.htm</code>、<code>.html</code>、<code>.shtml</code>等常见形式为后缀。</li><li>静态网页是实实在在保存在服务器上的文件，每个网页都是一个独立的文件</li><li>静态网页没有数据库的支持，在网站制作和维护方面工作量较大</li><li>静态网页的交互性较差，在功能方面有较大的限制</li><li>页面浏览速度迅速，过程无需连接数据库，减轻了服务器的负担</li></ul><h3 id="动态网页">动态网页</h3><p>动态网页是相对于静态网页而言的。当浏览器请求服务器的某个页面时，服务器根据当前时间、环境参数、数据库操作等动态的生成HTML页面，然后在发送给浏览器。</p><ul><li>动态网页一般以数据库技术为基础，可以大大降低网站维护的工作量</li><li>采用动态网页技术的网站可以实现更多的功能，如用户注册、用户登录、在线调查、用户管理、订单管理等等</li><li>动态网页实际上并不是独立存在于服务器上的网页文件，只有当用户请求时服务器才返回一个完整的网页</li></ul><h3 id="伪静态技术">伪静态技术</h3><p>伪静态是相对真实静态来讲的，真实静态会生成一个html或htm后缀的文件，访客能够访问到真实存在的静态页面，而伪静态则没有生成实体静态页面文件，而仅仅是以.html一类的静态页面形式，但其实是用PHP程序动态脚本来处理的，这就是伪静态。</p><ul><li>从URL结构以及页面名称看，伪静态和静态页面是一样的。伪静态的页面后缀可以是html htm 或者是目录格式</li><li>伪静态只是改变了URL的表现形式，实际上还是动态页面</li><li>静态页面可以节省服务器资源，而伪静态严格说是增加服务器资源消耗的</li></ul><h2 id="如何选择CMS？">如何选择CMS？</h2><ol><li><p>易用性</p><p>选择一个CMS时，易用性是一个重要因素，因为它极大地影响了团队的使用率和工作流程。一个理想的平台应该对团队中的所有使用者都易于使用。它涉及到系统的用户界面、功能操作和学习曲线的简单性，以及对用户的友好程度。</p></li><li><p>可定制性</p><p>在选择CMS时，可定制性是一个重要的标准，它指的是系统能够满足用户个性化需求、灵活调整和扩展的能力。</p><p>一个可定制的CMS应该支持插件和扩展功能，使用户能够根据自己的需求添加新的功能和工具。用户可以根据自己的网站需求选择和安装适合的插件，从而扩展和增强网站的功能性。</p></li><li><p>安全性</p><p>用户需要一个能够保护内容、用户和前端访问者安全的平台。在评估不同的解决方案时，考虑平台所扮演的角色以及需要承担保护网站的责任。</p><p>一个安全的CMS应该能够对敏感数据进行加密和保护，包括用户的个人信息、登录凭据和其他敏感数据，并且及时修补和更新系统中发现的安全漏洞。</p></li></ol><h2 id="CMS及站点生成器推荐">CMS及站点生成器推荐</h2><h3 id="WordPress">WordPress</h3><p>WordPress是一个以PHP和MySQL为平台的自由开源的博客软件和内容管理系统。WordPress是最受欢迎的网站内容管理系统，全球有大约43%的网站都是使用WordPress架设网站的。如今，它被使用在超过7000万个站点上。</p><p>由于其开源的特性，第三方的插件和模板非常的多，可以很容易设置出各种布局和风格的网站。相较于传统的建站方式，WordPress大大降低了建站难度，同时也提高了建站的效率。您可以使用WordPress开网店、做论坛、做问答社区、架设企业网站、搭建个人博客等。</p><p><a href="https://wordpress.org/">WordPress</a> | <a href="https://github.com/WordPress/WordPress">GitHub仓库</a> | <a href="https://developer.wordpress.org/advanced-administration/before-install/howto-install/">安装文档</a></p><h3 id="Typecho">Typecho</h3><p>Typecho是一个基于PHP的开源博客程序。它使用多种数据库（MySQL、PostgreSQL、SQLite、MariaDB）储存数据，在GPLv2许可证下发行。</p><p>相比于WordPress，Typecho更加简洁。Typecho的程序本体不到500KB，而它的数据表在不包括扩展生成的数据表时仅7张。整站只需几个接口，通过静态继承快速传递参数，插件越多，功能只会越强大，对速度影响却微乎其微。</p><p><a href="https://typecho.org/">Typecho</a> | <a href="https://github.com/typecho/typecho">GitHub仓库</a> | <a href="https://docs.typecho.org/install">安装文档</a></p><h3 id="Flarum">Flarum</h3><p>Flarum是一款基于PHP构建的论坛软件服务端。其用户界面还用到了JavaScript和TypeScript。Flarum是由两个论坛软件FluxBB和esoTalk合并而成。Flarum是一个技术优秀、开放且可扩展的讨论平台，具有可扩展性、高性能且美观。</p><p><a href="https://flarum.org/">Flarum</a> | <a href="https://github.com/flarum/flarum">GitHub仓库</a> | <a href="https://docs.flarum.org/zh/install">安装文档</a></p><h3 id="Hexo">Hexo</h3><p>Hexo是一个快速、简洁且高效的博客框架。Hexo使用Markdown（或其他标记语言）解析文章，在几秒内，即可利用靓丽的主题生成<strong>静态网页</strong>。与其他静态博客框架相比，Hexo具有速度快、使用方便等优点，同时具备丰富的插件和主题支持，可以满足不同用户的需求。</p><p><a href="https://hexo.io/zh-cn/">Hexo</a> | <a href="https://github.com/hexojs/hexo">GitHub仓库</a> | <a href="https://hexo.io/zh-cn/docs/">安装文档</a></p><h3 id="Jekyll">Jekyll</h3><p>Jekyll是一个简单的、博客感知的<strong>静态站点生成器</strong>，非常适合个人、项目或组织站点。可以将其视为基于文件的CMS，但没有任何复杂性。 Jekyll获取您的内容，呈现Markdown和Liquid模板，并生成一个完整的静态网站，可供Apache、Nginx或其他 Web 服务器提供服务。 Jekyll是GitHub Pages背后的引擎，您可以使用它直接从GitHub存储库托管站点。</p><p><a href="https://jekyllrb.com/">Jekyll</a> |<a href="https://github.com/jekyll/jekyll"> GitHub仓库</a> | <a href="https://jekyllrb.com/docs/">安装文档</a></p><h3 id="Hugo">Hugo</h3><p>Hugo是一个用Go编写的<strong>静态网站生成器</strong>，以Apache License 2.0许可的开放源代码项目。Hugo一般只需几秒钟就能生成一个网站（每页少于1毫秒），被称为“世界上最快的网站构建框架”，也使Hugo大受欢迎，成为最热门的静态网站生成器之一，被广泛采用。较出色的功能包括多语言支持、图像处理、定制输出格式、短代码等等。</p><p><a href="https://gohugo.io/">Hugo</a> | <a href="https://github.com/gohugoio/hugo">GitHub仓库</a> | <a href="https://gohugo.io/installation/">安装文档</a></p><h3 id="Drupal">Drupal</h3><p>Drupal 是由德赖斯·布伊泰尔特创立的自由开源内容管理系统，用PHP语言写成。在业界，Drupal常被视为内容管理框架（CMF），而非一般意义上的内容管理系统（CMS）。截至2013年10月，Drupal的社群已编写了超过23,855个模块（module）。</p><p>Drupal虽然配有强大功能，但不少用户批评其使用接口复杂、违反直觉、设置分布容易惹人混乱。然而，Drupal 的功能由于极具弹性，而且其运作环境能让编程人员较易作大幅改动，建立出大量崭新功能，令其备受欢迎。</p><p><a href="https://www.drupal.org/">Drupal</a> | <a href="https://github.com/drupal/drupal">GitHub仓库</a> | <a href="https://www.drupal.org/zh-hans/docs/user_guide/zh-hans/install-requirements.html">安装文档</a></p><h3 id="Halo">Halo</h3><p>Halo是一个强大易用的开源建站工具。Halo基于Java开发的开源博客系统，拥有丰富的主题模板和插件，能够满足用户多样化的建站需求。无论是想要搭建个人博客、企业官网还是团队站点，Halo都能提供稳定可靠的技术支持和灵活可扩展的功能模块。</p><p><a href="https://halo.run/">Halo</a> | <a href="https://github.com/halo-dev/halo">GitHub仓库</a> | <a href="https://docs.halo.run/">安装文档</a></p><h2 id="参考资料">参考资料</h2><p><a href="https://zh.wikipedia.org/wiki/%E5%86%85%E5%AE%B9%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F">维基百科：内容管理系统</a></p><p><a href="https://zhuanlan.zhihu.com/p/104151537">知乎：静态网页与动态网页的区别</a></p><p><a href="https://baike.baidu.com/item/%E4%BC%AA%E9%9D%99%E6%80%81/2234695">百度百科：伪静态</a></p><p><a href="https://www.sohu.com/a/691840450_121637599">搜狐：选择CMS时需考虑的5个关键标准</a></p><p><a href="https://zh.wikipedia.org/wiki/%E5%86%85%E5%AE%B9%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E5%88%97%E8%A1%A8">维基百科：内容管理系统列表</a></p><p><a href="https://zh.wikipedia.org/wiki/WordPress">维基百科：WordPress</a></p><p><a href="https://zh.wikipedia.org/wiki/Typecho">维基百科：Typecho</a></p><p><a href="https://zh.wikipedia.org/wiki/Flarum">维基百科：Flarum</a></p><p><a href="https://zh.wikipedia.org/wiki/Jekyll_(%E8%BD%AF%E4%BB%B6)">维基百科：Jekyll（软件）</a></p><p><a href="https://zh.wikipedia.org/wiki/Hugo_(%E8%BB%9F%E4%BB%B6)">维基百科：Hugo（软件）</a></p><p><a href="https://zh.wikipedia.org/wiki/Drupal">维基百科：Drupal</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 建站 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 建站 </tag>
+            
+            <tag> CMS </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>新手建站（三）：连接服务器并设置域名解析</title>
       <link href="/post/99c7fa1c/"/>
       <url>/post/99c7fa1c/</url>
