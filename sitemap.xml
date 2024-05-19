@@ -2,9 +2,54 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.auriel.top/post/ae58d2f1/</loc>
+    
+    <lastmod>2024-05-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.auriel.top/post/d4550abf/</loc>
     
-    <lastmod>2024-04-21</lastmod>
+    <lastmod>2024-05-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.auriel.top/post/99c7fa1c/</loc>
+    
+    <lastmod>2024-05-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.auriel.top/post/dd83a796/</loc>
+    
+    <lastmod>2024-05-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.auriel.top/post/739f0a30/</loc>
+    
+    <lastmod>2024-05-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.auriel.top/vercel.json</loc>
+    
+    <lastmod>2024-05-19</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -13,7 +58,16 @@
   <url>
     <loc>https://blog.auriel.top/about/index.html</loc>
     
-    <lastmod>2024-04-21</lastmod>
+    <lastmod>2024-05-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.auriel.top/tags/index.html</loc>
+    
+    <lastmod>2024-05-19</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -22,7 +76,7 @@
   <url>
     <loc>https://blog.auriel.top/cookies-instructions/index.html</loc>
     
-    <lastmod>2024-04-18</lastmod>
+    <lastmod>2024-05-19</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -38,45 +92,9 @@
   </url>
   
   <url>
-    <loc>https://blog.auriel.top/post/99c7fa1c/</loc>
-    
-    <lastmod>2024-04-14</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.auriel.top/post/739f0a30/</loc>
-    
-    <lastmod>2024-04-14</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.auriel.top/post/dd83a796/</loc>
-    
-    <lastmod>2024-04-05</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.auriel.top/post/f82f332a/</loc>
     
     <lastmod>2023-05-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.auriel.top/tags/index.html</loc>
-    
-    <lastmod>2023-02-26</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -247,7 +265,7 @@
 
   <url>
     <loc>https://blog.auriel.top/</loc>
-    <lastmod>2024-05-16</lastmod>
+    <lastmod>2024-05-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -255,175 +273,182 @@
   
   <url>
     <loc>https://blog.auriel.top/tags/Flash/</loc>
-    <lastmod>2024-05-16</lastmod>
+    <lastmod>2024-05-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.auriel.top/tags/%E6%8F%92%E4%BB%B6/</loc>
-    <lastmod>2024-05-16</lastmod>
+    <lastmod>2024-05-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.auriel.top/tags/Gridea/</loc>
-    <lastmod>2024-05-16</lastmod>
+    <lastmod>2024-05-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.auriel.top/tags/NexT/</loc>
-    <lastmod>2024-05-16</lastmod>
+    <lastmod>2024-05-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.auriel.top/tags/%E7%BE%8E%E5%8C%96/</loc>
-    <lastmod>2024-05-16</lastmod>
+    <lastmod>2024-05-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.auriel.top/tags/%E5%8A%A0%E8%BD%BD%E5%8A%A8%E7%94%BB/</loc>
-    <lastmod>2024-05-16</lastmod>
+    <lastmod>2024-05-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.auriel.top/tags/css/</loc>
-    <lastmod>2024-05-16</lastmod>
+    <lastmod>2024-05-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.auriel.top/tags/HTML/</loc>
-    <lastmod>2024-05-16</lastmod>
+    <lastmod>2024-05-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.auriel.top/tags/%E7%BD%91%E9%A1%B5%E6%BA%90%E7%A0%81/</loc>
-    <lastmod>2024-05-16</lastmod>
+    <lastmod>2024-05-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.auriel.top/tags/%E5%8F%B3%E9%94%AE%E8%8F%9C%E5%8D%95/</loc>
-    <lastmod>2024-05-16</lastmod>
+    <lastmod>2024-05-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.auriel.top/tags/JavaScript/</loc>
-    <lastmod>2024-05-16</lastmod>
+    <lastmod>2024-05-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.auriel.top/tags/BUG/</loc>
-    <lastmod>2024-05-16</lastmod>
+    <lastmod>2024-05-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.auriel.top/tags/Aplayer/</loc>
-    <lastmod>2024-05-16</lastmod>
+    <lastmod>2024-05-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.auriel.top/tags/MetingJS/</loc>
-    <lastmod>2024-05-16</lastmod>
+    <lastmod>2024-05-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.auriel.top/tags/Vercel/</loc>
-    <lastmod>2024-05-16</lastmod>
+    <lastmod>2024-05-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.auriel.top/tags/GFW/</loc>
-    <lastmod>2024-05-16</lastmod>
+    <lastmod>2024-05-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.auriel.top/tags/DNS/</loc>
-    <lastmod>2024-05-16</lastmod>
+    <lastmod>2024-05-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.auriel.top/tags/%E5%BB%BA%E7%AB%99/</loc>
-    <lastmod>2024-05-16</lastmod>
+    <lastmod>2024-05-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.auriel.top/tags/%E5%9F%9F%E5%90%8D/</loc>
-    <lastmod>2024-05-16</lastmod>
+    <lastmod>2024-05-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.auriel.top/tags/JQuery/</loc>
-    <lastmod>2024-05-16</lastmod>
+    <lastmod>2024-05-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.auriel.top/tags/AI/</loc>
-    <lastmod>2024-05-16</lastmod>
+    <lastmod>2024-05-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.auriel.top/tags/Bing/</loc>
-    <lastmod>2024-05-16</lastmod>
+    <lastmod>2024-05-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.auriel.top/tags/%E5%88%86%E4%BA%AB/</loc>
-    <lastmod>2024-05-16</lastmod>
+    <lastmod>2024-05-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.auriel.top/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
-    <lastmod>2024-05-16</lastmod>
+    <lastmod>2024-05-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.auriel.top/tags/CMS/</loc>
-    <lastmod>2024-05-16</lastmod>
+    <lastmod>2024-05-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.auriel.top/tags/CDN/</loc>
+    <lastmod>2024-05-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -432,42 +457,42 @@
   
   <url>
     <loc>https://blog.auriel.top/categories/%E4%BC%91%E9%97%B2/</loc>
-    <lastmod>2024-05-16</lastmod>
+    <lastmod>2024-05-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.auriel.top/categories/Gridea/</loc>
-    <lastmod>2024-05-16</lastmod>
+    <lastmod>2024-05-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.auriel.top/categories/%E7%BD%91%E9%A1%B5%E6%BA%90%E7%A0%81/</loc>
-    <lastmod>2024-05-16</lastmod>
+    <lastmod>2024-05-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.auriel.top/categories/Vercel/</loc>
-    <lastmod>2024-05-16</lastmod>
+    <lastmod>2024-05-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.auriel.top/categories/%E5%BB%BA%E7%AB%99/</loc>
-    <lastmod>2024-05-16</lastmod>
+    <lastmod>2024-05-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.auriel.top/categories/AI/</loc>
-    <lastmod>2024-05-16</lastmod>
+    <lastmod>2024-05-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
