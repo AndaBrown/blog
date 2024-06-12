@@ -1,4 +1,5 @@
 https://blog.auriel.top/vercel.json
+https://blog.auriel.top/link/index.html
 https://blog.auriel.top/message/index.html
 https://blog.auriel.top/pwa/manifest.json
 https://blog.auriel.top/tags/index.html
@@ -26,7 +27,6 @@ https://blog.auriel.top/about/index.html
 https://blog.auriel.top/archives/index.html
 https://blog.auriel.top/categories/index.html
 https://blog.auriel.top/cookies-instructions/index.html
-https://blog.auriel.top/link/index.html
 https://blog.auriel.top/post/d4550abf/
 https://blog.auriel.top/
 https://blog.auriel.top/tags/Flash/
