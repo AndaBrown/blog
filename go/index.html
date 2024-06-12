@@ -1,3 +1,540 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><title>页面加载中,请稍候...</title><style type="text/css">.loader{background:#999;margin:0}.loader{-webkit-animation:fadein 1s;-moz-animation:fadein 1s;-o-animation:fadein 1s;animation:fadein 1s;position:absolute;top:0;left:0;right:0;bottom:0;background-color:#fff}@-moz-keyframes fadein{from{opacity:0}to{opacity:1}}@-webkit-keyframes fadein{from{opacity:0}to{opacity:1}}@-o-keyframes fadein{from{opacity:0}to{opacity:1}}@keyframes fadein{from{opacity:0}to{opacity:1}}.loader-inner{position:absolute;z-index:300;top:40%;left:50%;-webkit-transform:translate(-50%,-50%);-moz-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);-o-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}@-webkit-keyframes rotate_pacman_half_up{0%{-webkit-transform:rotate(270deg);transform:rotate(270deg)}50%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}100%{-webkit-transform:rotate(270deg);transform:rotate(270deg)}}@keyframes rotate_pacman_half_up{0%{-webkit-transform:rotate(270deg);transform:rotate(270deg)}50%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}100%{-webkit-transform:rotate(270deg);transform:rotate(270deg)}}@-webkit-keyframes rotate_pacman_half_down{0%{-webkit-transform:rotate(90deg);transform:rotate(90deg)}50%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(90deg);transform:rotate(90deg)}}@keyframes rotate_pacman_half_down{0%{-webkit-transform:rotate(90deg);transform:rotate(90deg)}50%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(90deg);transform:rotate(90deg)}}@-webkit-keyframes pacman-balls{75%{opacity:.7}100%{-webkit-transform:translate(-100px,-6.25px);transform:translate(-100px,-6.25px)}}@keyframes pacman-balls{75%{opacity:.7}100%{-webkit-transform:translate(-100px,-6.25px);transform:translate(-100px,-6.25px)}}.pacman>div:nth-child(2){-webkit-animation:pacman-balls 1s 0s infinite linear;animation:pacman-balls 1s 0s infinite linear}.pacman>div:nth-child(3){-webkit-animation:pacman-balls 1s .33s infinite linear;animation:pacman-balls 1s .33s infinite linear}.pacman>div:nth-child(4){-webkit-animation:pacman-balls 1s .66s infinite linear;animation:pacman-balls 1s .66s infinite linear}.pacman>div:nth-child(5){-webkit-animation:pacman-balls 1s .99s infinite linear;animation:pacman-balls 1s .99s infinite linear}.pacman>div:first-of-type{width:0;height:0;border-right:25px solid transparent;border-top:25px solid #e1244e;border-left:25px solid #e1244e;border-bottom:25px solid #e1244e;border-radius:25px;-webkit-animation:rotate_pacman_half_up .5s 0s infinite;animation:rotate_pacman_half_up .5s 0s infinite}.pacman>div:nth-child(2){width:0;height:0;border-right:25px solid transparent;border-top:25px solid #e1244e;border-left:25px solid #e1244e;border-bottom:25px solid #e1244e;border-radius:25px;-webkit-animation:rotate_pacman_half_down .5s 0s infinite;animation:rotate_pacman_half_down .5s 0s infinite;margin-top:-50px}.pacman>div:nth-child(3),.pacman>div:nth-child(4),.pacman>div:nth-child(5),.pacman>div:nth-child(6){background-color:#e1244e;width:15px;height:15px;border-radius:100%;margin:2px;width:10px;height:10px;position:absolute;-webkit-transform:translate(0,-6.25px);-ms-transform:translate(0,-6.25px);transform:translate(0,-6.25px);top:25px;left:100px}.loader-text{margin:20px 0 0 -16px;display:block;font-size:18px}</style></head><body><div class="loader"><div class="loader-inner pacman"><div></div><div></div><div></div><div></div><div></div><span class="loader-text" id="text">页面加载中，请稍候...</span></div></div></body><script type="text/javascript">window.onload=function(){var h={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=",decode:function(b){var c="",a=0;for(b=b.replace(/[^A-Za-z0-9+/=]/g,"");a<b.length;){var d=this._keyStr.indexOf(b.charAt(a++));var f=this._keyStr.indexOf(b.charAt(a++));var g=this._keyStr.indexOf(b.charAt(a++));var k=this._keyStr.indexOf(b.charAt(a++));d=d<<2|f>>4;f=(f&15)<<4|g>>2;var l=(g&3)<<6|k;c+=String.fromCharCode(d);64!=g&&(c+=String.fromCharCode(f));64!=k&&(c+=String.fromCharCode(l))}return c=
-h._utf8_decode(c)},_utf8_decode:function(b){var c="",a=0;for(c1=c2=0;a<b.length;){var d=b.charCodeAt(a);128>d?(c+=String.fromCharCode(d),a++):191<d&&224>d?(c2=b.charCodeAt(a+1),c+=String.fromCharCode((d&31)<<6|c2&63),a+=2):(c2=b.charCodeAt(a+1),c3=b.charCodeAt(a+2),c+=String.fromCharCode((d&15)<<12|(c2&63)<<6|c3&63),a+=3)}return c}},e=h.decode(location.hash.slice(1));""==e&&(e=h.decode(window.location.search.substr(1)));null===e.match(/http(?:s)?:\/\/.+/i)&&(document.title="\u53c2\u6570\u9519\u8bef\uff0c\u6b63\u5728\u8fd4\u56de\u9996\u9875...",
-document.getElementById("text").innerHTML=document.title,e=location.origin);setTimeout(function(){location.href=e},1E3)};</script></html>
+<!doctype html>
+<html data-user-color-scheme="dark" lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>跳转安全提示 | Auriel</title>
+    <link rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_1736178_lbnruvf0jn.css" />
+    <style type="text/css">
+        /* 向上渐隐显示(主内容使用) */
+        @-webkit-keyframes fadeInUp {
+          0% {
+            opacity: 0;
+            transform: translateY(24px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(-80px);
+          }
+        }
+        @keyframes fadeInUp {
+          0% {
+            opacity: 0;
+            -webkit-transform: translateY(24px);
+            -ms-transform: translateY(24px);
+            transform: translateY(24px);
+          }
+          100% {
+            opacity: 1;
+            -webkit-transform: translateY(-80px);
+            -ms-transform: translateY(-80px);
+            transform: translateY(-80px);
+          }
+        }
+        /* 向上渐隐显示(成功错误提示) */
+        @-webkit-keyframes alertFadeInUp {
+          0% {
+            opacity: 0;
+            transform: translateY(24px);
+          }
+          75% {
+            opacity: 1;
+            transform: translateY(0);
+          }
+          100% {
+            opacity: 0;
+          }
+        }
+        @keyframes alertFadeInUp {
+          0% {
+            opacity: 0;
+            -webkit-transform: translateY(24px);
+            -ms-transform: translateY(24px);
+            transform: translateY(24px);
+          }
+          75% {
+            opacity: 1;
+            -webkit-transform: translateY(0);
+            -ms-transform: translateY(0);
+            transform: translateY(0);
+          }
+          100% {
+            opacity: 0;
+          }
+        }
+        @-webkit-keyframes fadeOutUp {
+          0% {
+            opacity: 1;
+          }
+          to {
+            opacity: 0;
+            transform: translate3d(0, -350%, 0);
+          }
+        }
+        @keyframes fadeOutUp {
+          0% {
+            opacity: 1;
+          }
+          to {
+            opacity: 0;
+            -webkit-transform: translate3d(0, -350%, 0);
+            transform: translate3d(0, -350%, 0);
+          }
+        }
+  
+        :root {
+          --blue: #007bff;
+          --indigo: #6610f2;
+          --purple: #6f42c1;
+          --pink: #e83e8c;
+          --red: #dc3545;
+          --orange: #fd7e14;
+          --yellow: #ffc107;
+          --green: #28a745;
+          --teal: #20c997;
+          --cyan: #17a2b8;
+          --white: #fff;
+          --gray: #6c757d;
+          --gray-dark: #343a40;
+          --primary: #007bff;
+          --secondary: #6c757d;
+          --success: #28a745;
+          --info: #17a2b8;
+          --warning: #ffc107;
+          --danger: #dc3545;
+          --light: #f8f9fa;
+          --dark: #343a40;
+          --breakpoint-xs: 0;
+          --breakpoint-sm: 576px;
+          --breakpoint-md: 768px;
+          --breakpoint-lg: 992px;
+          --breakpoint-xl: 1200px;
+          --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI",
+            "PingFang SC", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+            "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+            "Segoe UI Symbol", "Noto Color Emoji";
+          --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+            "Liberation Mono", "Courier New", monospace;
+        }
+  
+        [data-user-color-scheme="dark"] {
+          --body-bg-color: #22272e;
+          --board-bg-color: #2b313a;
+          --text-color: #adbac7;
+          --sec-text-color: #b3bac1;
+          --post-text-color: #adbac7;
+          --post-heading-color: #adbac7;
+          --post-link-color: #44a9fc;
+          --post-danger-link-color: #ff8b48;
+          --link-hover-color: #2500c8;
+          --link-danger-hover-color: #c70000;
+          --link-hover-bg-color: #22272e;
+          --line-color: #adbac7;
+          --navbar-bg-color: #22272e;
+          --navbar-text-color: #cbd4dc;
+          --subtitle-color: #cbd4dc;
+          --scrollbar-color: #30a9de;
+          --scrollbar-hover-color: #34a3ff;
+          --button-bg-color: transparent;
+          --button-hover-bg-color: #46647e;
+          --highlight-bg-color: #2d333b;
+          --inlinecode-bg-color: rgba(99, 110, 123, 0.4);
+        }
+        ::-webkit-scrollbar {
+          width: 6px;
+          height: 6px;
+        }
+        ::-webkit-scrollbar-corner {
+          background-color: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+          background-color: var(--scrollbar-color);
+          border-radius: 6px;
+        }
+
+        html {
+          -webkit-text-size-adjust: 100%;
+          -webkit-tap-highlight-color: transparent;
+        }
+        html,
+        body {
+          font-family: var(--font-family-sans-serif);
+          padding: 0;
+          margin: 0;
+          background-color: var(--body-bg-color);
+          color: var(--text-color);
+          transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+          height: 100%;
+        }
+        body {
+          font-size: 14px;
+        }
+        p,
+        div {
+          padding: 0;
+          margin: 0;
+        }
+        a {
+          text-decoration: none;
+          transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+        }
+        body a:hover {
+          color: #20c997;
+          text-decoration: none;
+        }
+        .go-page {
+          height: 100%;
+        }
+        .content {
+          /* padding-top: 220px; */
+          width: 450px;
+          margin: auto;
+          word-break: break-all;
+          height: 100%;
+        }
+        .content .logo-img {
+          margin-bottom: 25px;
+          text-align: center;
+          padding-top: 25%;
+        }
+        .content .logo-img img {
+          display: block;
+          width: 200px;
+          height: 75px;
+          margin: auto;
+          margin-bottom: 20px;
+        }
+  
+        .content .loading-item {
+          background: #fff;
+          padding: 24px;
+          border-radius: 12px;
+          border: 1px solid #e1e1e1;
+          margin-bottom: 10px;
+        }
+        /* 绿色 */
+        .content .tip1 {
+          background: #f0f9ea;
+        }
+        /* 黄色 */
+        .content .tip2 {
+          background: #fdf5e6;
+        }
+        /* 红色 */
+        .content .tip3 {
+          background: #fef0f0;
+        }
+        .content .icon-snapchat-fill {
+          font-size: 20px;
+          color: var(--post-danger-link-color);
+          border: 1px solid var(--post-danger-link-color);
+          border-radius: 50%;
+          width: 32px;
+          text-align: center;
+          margin-right: 5px;
+        }
+        .content .tip1 .icon-snapchat-fill {
+          color: var(--post-link-color);
+          border-color: var(--post-link-color);
+        }
+        .content .loading-text {
+          font-size: 16px;
+          font-weight: 600;
+          color: #222226;
+          line-height: 22px;
+          /* margin-left: 12px; */
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+        .content .flex {
+          display: flex;
+          align-items: center;
+        }
+        .content .flex-end {
+          display: flex;
+          justify-content: flex-end;
+        }
+        /* 蓝色 */
+        .content .loading-color1 {
+          color: var(--post-link-color);
+        }
+        .content .loading-color2 {
+          color: var(--post-danger-link-color);
+        }
+        .content .loading-tip {
+          padding: 12px;
+          margin-bottom: 16px;
+          border-radius: 4px;
+        }
+        .content .loading-topic {
+          font-size: 14px;
+          color: #222226;
+          line-height: 24px;
+          margin-bottom: 24px;
+        }
+        .loading-topic .flex {
+          flex-direction: column;
+        }
+        .content .loading-img {
+          width: 24px;
+          height: 24px;
+        }
+        .content .loading-btn {
+          font-size: 14px;
+          color: var(--post-link-color);
+          border: 1px solid var(--post-link-color);
+          display: inline-block;
+          box-sizing: border-box;
+          padding: 6px 18px;
+          border-radius: 18px;
+          margin-left: 8px;
+        }
+        .content .warning-btn {
+          font-size: 14px;
+          color: var(--post-danger-link-color);
+          border: 1px solid var(--post-danger-link-color);
+          display: inline-block;
+          box-sizing: border-box;
+          padding: 6px 18px;
+          border-radius: 18px;
+          margin-left: 8px;
+        }
+        .content .loading-btn:hover {
+          color: var(--link-hover-color);
+          border-color: var(--link-hover-color);
+        }
+        .content .warning-btn:hover {
+          color: var(--link-danger-hover-color);
+          border-color: var(--link-danger-hover-color);
+        }
+        /*.content .loading-btn-github {
+          width: 121px;
+          background: var(--post-danger-link-color);
+          color: #fff;
+        }*/
+        .hidden {
+          display: none;
+        }
+        /*.form-control.hidden {
+          display: none !important;
+        }
+        .mp-img-box {
+          text-align: center;
+          margin-bottom: 10px;
+        }
+        .mp-img {
+          max-width: 400px;
+          width: 100%;
+          box-shadow: 5px 5px 15px rgb(0 0 0 / 8%);
+          margin-bottom: 5px;
+        }*/
+        .fadeInUp {
+          -webkit-animation-name: fadeInUp;
+          animation-name: fadeInUp;
+        }
+        .alertFadeInUp {
+          -webkit-animation-name: alertFadeInUp;
+          animation-name: alertFadeInUp;
+          -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+          -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+        }
+        .fadeOutUp {
+          -webkit-animation-name: fadeOutUp;
+          animation-name: fadeOutUp;
+        }
+        .fade-animate {
+          -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+          -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+          -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+        }
+        /*.go-alert {
+          margin: 0 auto;
+          width: 110px;
+          position: absolute;
+          left: 46%;
+          top: 5%;
+          opacity: 0;
+          text-align: center;
+        }*/
+        .footer {
+          text-align: center;
+          position: relative;
+          margin-bottom: 20px;
+        }
+        .footer a {
+          color: var(--text-color);
+        }
+  
+        .flex-box {
+          display: flex;
+          height: 100vh;
+          flex-direction: column;
+        }
+        .flex-contain {
+          flex: 1;
+        }
+        .flex-footer {
+          height: 24px;
+        }
+  
+        @media (max-width: 767.98px) {
+          .content {
+            width: 94%;
+          }
+          .content .logo-img {
+            padding-top: 80px;
+          }
+        }
+      </style> 
+    <!--Google Analytics(gtag)-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WVK0S6H59D"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-WVK0S6H59D');
+    </script>
+    <!--Microsoft Clarity-->
+    <script type="text/javascript">
+      (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "fu11495sl7");
+    </script>
+    <!--百度统计-->
+    <script>
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?6f06504e0effd8ada0d6de8da7cdb9c1";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+    <!--51LA统计-->
+    <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+    <script>LA.init({id:"JgqPSyTX0bBpPwXV",ck:"JgqPSyTX0bBpPwXV"})</script>
+    <!--灵雀应用监控-->
+    <script src="https://sdk.51.la/perf/js-sdk-perf.min.js" crossorigin="anonymous"></script>
+    <script>
+      new LingQue.Monitor().init({id:"Jk6zc9D356fnVo2s",sendSuspicious:true});
+    </script>
+</head>
+<body>
+    <div id="goPage" class="go-page">
+        <div class="content">
+            <div class="flex-box">
+                <div class="flex-contain">
+                    <div class="logo-img">
+                        <img src="/icon/aurieltop.png">
+                        <p class="name" style="font-size: 22px;">跳转安全提示</p>
+                        <p class="description">您点击了一个外部链接，为了保证您的安全，我们会对链接进行检测</p>
+                    </div>
+                    <div class="loading-item loading-safe flex">
+                        <i class="iconfont icon-snapchat-fill"></i>
+                        <div class="loading-text">正在进行安全性检测...</div>
+                    </div>
+                    <div class="go-box"><p id="box"></p></div>
+                </div>
+                <div class="footer flex-footer">
+                    Copyright ©2021-2024 <a href="https://www.auriel.top/" class="name"><span>Auriel</span>.</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        const host=window.location.host;
+        var Base64 = {
+            _keyStr: "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=",
+            decode: function(e) {
+                var t = "";
+                var n, r, i;
+                var s, o, u, a;
+                var f = 0;
+                e = e.replace(/[^A-Za-z0-9+/=]/g, "");
+                while (f < e.length) {
+                    s = this._keyStr.indexOf(e.charAt(f++));
+                    o = this._keyStr.indexOf(e.charAt(f++));
+                    u = this._keyStr.indexOf(e.charAt(f++));
+                    a = this._keyStr.indexOf(e.charAt(f++));
+                    n = s << 2 | o >> 4;
+                    r = (o & 15) << 4 | u >> 2;
+                    i = (u & 3) << 6 | a;
+                    t = t + String.fromCharCode(n);
+                    if (u != 64) {
+                        t = t + String.fromCharCode(r)
+                    }
+                    if (a != 64) {
+                        t = t + String.fromCharCode(i)
+                    }
+                }
+                t = Base64._utf8_decode(t);
+                return t
+            },
+            _utf8_decode: function(e) {
+                var t = "";
+                var n = 0;
+                var r = c1 = c2 = 0;
+                while (n < e.length) {
+                    r = e.charCodeAt(n);
+                    if (r < 128) {
+                        t += String.fromCharCode(r);
+                        n++
+                    } else if (r > 191 && r < 224) {
+                        c2 = e.charCodeAt(n + 1);
+                        t += String.fromCharCode((r & 31) << 6 | c2 & 63);
+                        n += 2
+                    } else {
+                        c2 = e.charCodeAt(n + 1);
+                        c3 = e.charCodeAt(n + 2);
+                        t += String.fromCharCode((r & 15) << 12 | (c2 & 63) << 6 | c3 & 63);
+                        n += 3
+                    }
+                }
+                return t
+            }
+        }
+        var jump_url = Base64.decode(location.hash.slice(1));
+        if (jump_url == '') jump_url=Base64.decode(window.location.search.substr(1));
+        const safeurl=["zh.wikipedia.org","github.com"];
+        if (safeurl.length !== 0) {
+          safe=false
+          for (let i = 0; i < safeurl.length; i++) {
+            const ele = safeurl[i];
+            if (jump_url.includes(ele)) {
+              safe = true;
+              box.innerHTML = '<div class="loading-item"><div class="flex loading-tip tip1"><i class="iconfont icon-snapchat-fill false"></i><div class="loading-text">链接安全，正在跳转……</div></div><div class="loading-topic"><span>正在跳转至：</span><a class="loading-color1 go-url">'+jump_url+'</a><span>，请稍后...</span></div><div class="flex-end"><a rel="noopener external nofollow noreferrer" class="loading-btn" href="" id="url">立即跳转</a></div></div>';
+              document.getElementById("url").href = jump_url;
+              const loadingItem = document.querySelector(".go-box .loading-item"),loadingSafe = document.querySelector(".loading-safe");
+              loadingSafe.classList.add("fadeOutUp", "fade-animate"),loadingItem.classList.remove("hidden"),loadingItem.classList.add("fadeInUp", "fade-animate");
+              setTimeout(function link_jump(){ window.location.href = jump_url },3000);
+              break;
+            }
+          }
+          if(!safe){
+            box.innerHTML = '<div class="loading-item"><div class="flex loading-tip tip2"><i class="iconfont icon-snapchat-fill false"></i><div class="loading-text">未知链接，请谨慎访问！</div></div><div class="loading-topic"><span>您即将离开Auriel，去往：</span><a class="loading-color2 go-url">'+jump_url+'</a></div><div class="flex-end"><a class="loading-btn" href="javascript:closePage();" >关闭页面</a><a rel="noopener external nofollow noreferrer" class="warning-btn" href="" id="url">继续访问</a></div></div>';
+            document.getElementById("url").href = jump_url;
+            const loadingItem = document.querySelector(".go-box .loading-item"),loadingSafe = document.querySelector(".loading-safe");
+            loadingSafe.classList.add("fadeOutUp", "fade-animate"),loadingItem.classList.remove("hidden"),loadingItem.classList.add("fadeInUp", "fade-animate");
+          }
+    }
+    if( jump_url.match(/http(?:s)?:\/\/.+/i) == null ){
+        box.innerHTML = '<div class="loading-item loading-error fadeInUp fade-animate"><div class="flex loading-tip tip2"><i class="iconfont icon-snapchat-fill false"></i><div class="loading-text">参数错误，正在返回……</div></div><div class="loading-topic"><span>您点击的链接似乎包含无效参数，正在返回网站首页。您可以向我们报告问题或稍后重试。</span></div></div>';
+        setTimeout(function link_jump(){ window.location.href = "https://blog.auriel.top/" },3000);
+    }
+    function closePage() { // 通用窗口关闭  
+        window.opener=null;  
+        window.open('','_self');  
+        window.close();
+    }
+    </script>
+</body>
