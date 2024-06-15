@@ -2,61 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://blog.auriel.top/post/739f0a30/</loc>
-    
-    <lastmod>2024-06-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.auriel.top/post/ae58d2f1/</loc>
-    
-    <lastmod>2024-06-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.auriel.top/config.json</loc>
-    
-    <lastmod>2024-06-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.auriel.top/vercel.json</loc>
-    
-    <lastmod>2024-06-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.auriel.top/about/index.html</loc>
-    
-    <lastmod>2024-06-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.auriel.top/archives/index.html</loc>
-    
-    <lastmod>2024-06-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.auriel.top/categories/index.html</loc>
     
     <lastmod>2024-06-15</lastmod>
     
@@ -255,6 +201,60 @@
   
   <url>
     <loc>https://blog.auriel.top/post/99c7fa1c/</loc>
+    
+    <lastmod>2024-06-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.auriel.top/post/739f0a30/</loc>
+    
+    <lastmod>2024-06-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.auriel.top/post/ae58d2f1/</loc>
+    
+    <lastmod>2024-06-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.auriel.top/config.json</loc>
+    
+    <lastmod>2024-06-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.auriel.top/about/index.html</loc>
+    
+    <lastmod>2024-06-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.auriel.top/archives/index.html</loc>
+    
+    <lastmod>2024-06-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.auriel.top/categories/index.html</loc>
     
     <lastmod>2024-06-15</lastmod>
     
