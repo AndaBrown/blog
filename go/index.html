@@ -512,7 +512,7 @@
             const ele = safeurl[i];
             if (jump_url.includes(ele)) {
               safe = true;
-              box.innerHTML = '<div class="loading-item"><div class="flex loading-tip tip1"><i class="iconfont icon-snapchat-fill false"></i><div class="loading-text">链接安全，正在跳转……</div></div><div class="loading-topic"><span>正在跳转至：</span><a class="loading-color1 go-url">'+jump_url+'</a><span>，请稍后...</span></div><div class="flex-end"><a rel="noopener external nofollow noreferrer" class="loading-btn" href="" id="url">立即跳转</a></div></div>';
+              box.innerHTML = '<div class="loading-item"><div class="flex loading-tip tip1"><i class="iconfont icon-snapchat-fill false"></i><div class="loading-text">链接安全，正在跳转...</div></div><div class="loading-topic"><span>正在跳转至：</span><a class="loading-color1 go-url">'+jump_url+'</a><span>，请稍后...</span></div><div class="flex-end"><a rel="noopener external nofollow noreferrer" class="loading-btn" href="" id="url">立即跳转</a></div></div>';
               document.getElementById("url").href = jump_url;
               const loadingItem = document.querySelector(".go-box .loading-item"),loadingSafe = document.querySelector(".loading-safe");
               loadingSafe.classList.add("fadeOutUp", "fade-animate"),loadingItem.classList.remove("hidden"),loadingItem.classList.add("fadeInUp", "fade-animate");
@@ -528,7 +528,7 @@
           }
     }
     if( jump_url.match(/http(?:s)?:\/\/.+/i) == null ){
-        box.innerHTML = '<div class="loading-item loading-error fadeInUp fade-animate"><div class="flex loading-tip tip2"><i class="iconfont icon-snapchat-fill false"></i><div class="loading-text">参数错误，正在返回……</div></div><div class="loading-topic"><span>您点击的链接似乎包含无效参数，正在返回网站首页。您可以向我们报告问题或稍后重试。</span></div></div>';
+        box.innerHTML = '<div class="loading-item loading-error fadeInUp fade-animate"><div class="flex loading-tip tip2"><i class="iconfont icon-snapchat-fill false"></i><div class="loading-text">参数错误，正在返回...</div></div><div class="loading-topic"><span>您点击的链接似乎包含无效参数，正在返回网站首页。您可以向我们报告问题或稍后重试。</span></div></div>';
         setTimeout(function link_jump(){ window.location.href = "https://blog.auriel.top/" },3000);
     }
     function closePage() { // 通用窗口关闭  
