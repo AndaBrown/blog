@@ -6,7 +6,7 @@
   <link href="https://blog.auriel.top/atom.xml" rel="self"/>
   
   <link href="https://blog.auriel.top/"/>
-  <updated>2024-06-15T17:40:52.170Z</updated>
+  <updated>2024-09-16T19:00:00.000Z</updated>
   <id>https://blog.auriel.top/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>浅谈P2P内容分发网络</title>
+    <link href="https://blog.auriel.top/post/fa97bd48/"/>
+    <id>https://blog.auriel.top/post/fa97bd48/</id>
+    <published>2024-09-16T19:00:00.000Z</published>
+    <updated>2024-09-16T19:00:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="名词介绍">名词介绍</h2><p>P2P CDN（简称PCDN）是一种基于P2P技术的内容分发网络。与传统的CDN不同，PCDN通过挖掘和利用边缘网络中的海量碎片化闲置资源，构建出一个低成本、高品质的内容分发网络服务。</p><p>在PCDN中，用户既是内容的消费者，也是内容的分发者。当一个用户下载某个内容时，他可以从其他用户的节点中获取数据，同时自己也作为节点为其他用户提供数据传输服务。这种点对点的传输方式使得PCDN具有极高的扩展性和容错性，能够在用户量激增的情况下仍保持稳定的性能。</p><h2 id="相关技术">相关技术</h2><h3 id="对等式网络">对等式网络</h3><p>对等式网络（英语：peer-to-peer， 简称P2P），又称点对点技术，是去中心化、依靠用户群（peers）交换信息的互联网体系，它的作用在于，减低以往网路传输中的节点，以降低资料遗失的风险。与有中心服务器的中央网络系统不同，对等网络的每个用户端既是一个节点，也有服务器的功能，任何一个节点无法直接找到其他节点，必须依靠其户群进行信息交流。</p><p>P2P节点能遍布整个互联网，也给包括开发者在内的任何人、组织或政府带来监控难题。P2P在网络隐私要求高和文件共享领域中，得到了广泛的应用。使用一般型P2P技术的网络系统有比特币、Gnutella或自由网等。</p><p><img src="https://s2.loli.net/2024/09/17/V9zNYf6ld1vtyXA.png" alt="P2P.png"></p><p>传统下载，都是一个服务器，N个客户端。所有客户端，都去服务器下载数据。而P2P的话，A用户下载一部分，B用户也下载了一部分。然后，A用户和B用户之间，互相分享对方已有的数据。这样的话，减轻了服务器的压力。甚至说，服务器关掉，也不影响剩下用户之间完成全部数据的下载。</p><p>大名鼎鼎的BT（BitTorrent）下载，就是P2P下载。它所体现的，就是“人人为我，我为人人”的互联网精神。</p><h3 id="内容分发网络">内容分发网络</h3><p>內容分发网络（英语：Content Delivery Network或Content Distribution Network，缩写：CDN）是指一种透过互联网互相连接的电脑网络系统，利用最靠近每位用户的服务器，更快、更可靠地将音乐、图片、影片、应用程序及其他文件发送给用户，来提供高性能、可扩展性及低成本的网络内容传递给用户。</p><p>内容分发网络的总承载量可以比单一骨干最大的带宽还要大。这使得内容分发网络可以承载的用户数量比起传统单一服务器多。内容分发网络另外一个好处在于有异地备援。当某个服务器故障时，系统将会调用其他邻近地区的服务器服务，进而提供接近100%的可靠度。除此之外，内容分发网络提供给服务提供者更多的控制权。提供服务的人可以针对客户、地区，或是其他因子调整。</p><p><img src="https://s2.loli.net/2024/09/17/nOfdHEKtow3bu5B.png" alt="CDN.png"></p><p>传统方式，数据放在主服务器，大家都来取，服务器负担很大，带宽有瓶颈。CDN把数据放在离用户更近的区域服务器上。这样，就实现了“内容的分发”。主服务器的压力小了，用户看电影也不容易卡顿。</p><h2 id="PCDN-P2P-CDN">PCDN=P2P+CDN</h2><p>PCDN，是P2P和CDN技术的结合，是基于P2P技术的CDN。PCDN直接把内容放在了用户的家里，例如手机终端上，或者路由器上，变成了规模更大的“内容源”。</p><p>举例来说，你使用某视频App，观看了一个连续剧。附近的其他用户，如果也观看这个连续剧，就会从你的手机里，取用一部分数据。再例如，你使用某网盘App，下载了一份电子书。附近的其他用户，如果也要下载这份电子书，就可以从你的手机里，取用数据。</p><p>客户端上的PCDN，不仅可以通过手机App来实现，也可以直接部署在无线路由器上。</p><p><img src="https://s2.loli.net/2024/09/17/Iq7cd6KELfmNaMw.png" alt="PCDN.png"></p><h2 id="被封杀的PCDN">被封杀的PCDN</h2><h3 id="为什么要封杀PCDN？">为什么要封杀PCDN？</h3><p>首先，海量的PCDN流量，对运营商骨干传输网络，形成了巨大压力。用户的宽带都是包月的，不是按流量计费。用的越多，运营商网络压力越大，关键还收不到更多钱。其次，视频服务商们，搭建常规CDN服务节点，需要租用运营商的高价机房和带宽。现在服务商都用PCDN了，资源租用大幅减少，影响了运营商的盈利。触碰了核心利益，运营商当然要封杀。</p><h3 id="封杀PCDN的难度">封杀PCDN的难度</h3><p>封杀PCDN，并不是一件容易的事情。PCDN传输的数据，同样是视频等业务数据。想要区别用户的数据究竟是不是PCDN业务，存在不小挑战。如果区分不准确，或者采用“一刀切”，肯定会影响用户的正常上行需求（例如摄像头数据、直播数据、游戏数据等），进而引发大规模投诉，甚至用户流失。</p><p>这些年，运营商们普遍开始采用DPI（深度数据包检测）流量识别和QoS限制，对PCDN进行甄别和打压。例如，对PCDN业务进行精准识别，正常上行流量不受影响，PCDN流量安排上15%~20%的packet loss（丢包），就能实现PCDN业务的有效扼制。</p><h2 id="参考资料">参考资料</h2><p><a href="https://zh.wikipedia.org/wiki/%E5%B0%8D%E7%AD%89%E7%B6%B2%E8%B7%AF">维基百科：点对点网络</a></p><p><a href="https://zh.wikipedia.org/wiki/%E5%85%A7%E5%AE%B9%E5%82%B3%E9%81%9E%E7%B6%B2%E8%B7%AF">维基百科：内容分发网络</a></p><p><a href="https://www.huxiu.com/article/2622679.html">虎嗅：运营商拼命封杀的PCDN，到底是个啥？</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;名词介绍&quot;&gt;名词介绍&lt;/h2&gt;
+&lt;p&gt;P2P CDN（简称PCDN）是一种基于P2P技术的内容分发网络。与传统的CDN不同，PCDN通过挖掘和利用边缘网络中的海量碎片化闲置资源，构建出一个低成本、高品质的内容分发网络服务。&lt;/p&gt;
+&lt;p&gt;在PCDN中，用户既是内容</summary>
+      
+    
+    
+    
+    <category term="科普" scheme="https://blog.auriel.top/categories/%E7%A7%91%E6%99%AE/"/>
+    
+    
+    <category term="CDN" scheme="https://blog.auriel.top/tags/CDN/"/>
+    
+    <category term="P2P" scheme="https://blog.auriel.top/tags/P2P/"/>
+    
+  </entry>
   
   <entry>
     <title>RSA加密算法简介</title>
@@ -554,35 +582,6 @@
     <category term="NexT" scheme="https://blog.auriel.top/tags/NexT/"/>
     
     <category term="美化" scheme="https://blog.auriel.top/tags/%E7%BE%8E%E5%8C%96/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>解压的Flash插件</title>
-    <link href="https://blog.auriel.top/post/8422c4dc/"/>
-    <id>https://blog.auriel.top/post/8422c4dc/</id>
-    <published>2022-06-01T14:00:00.000Z</published>
-    <updated>2022-06-01T14:00:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>一些嵌入式插件，超解压哦！赶快来体验吧！</p><p>温馨提示：插件加载可能会相对滞后，请耐心等待！</p><h3 id="仓鼠">仓鼠</h3><p>这只活泼的宠物仓鼠将陪伴您一整天。看着他在他的轮子上奔跑，喝水，并通过点击鼠标吃掉你喂他的食物。点击轮子的中心，让他回到它上面。</p><iframe width="400" height="300" frameborder="0" src="https://cdn.abowman.com/widgets/hamster/hamster.html?up_bgColor=ffffff&up_bodyColor=e6debe&up_earColor=d4c898&up_snoutColor=f7f4e9&up_eyeColor=000000&up_feetColor=d4c898&up_tailColor=e6debe&up_waterColor=e0efff&up_foodColor=cba920&up_wheelColor=ffffff&up_wheelOuterColor=ff4d4d&up_wheelCenterColor=e4eb2f&up_wheelSpokeColor=dedede"></iframe><h3 id="鱼">鱼</h3><p>用这些饥饿的小鱼为您的页面增添一丝自然气息。看着它们跟着你的鼠标移动，希望你能通过点击水面来喂它们。</p><iframe width="400" height="300" frameborder="0" src="https://cdn.abowman.com/widgets/fish/fish.html?up_backgroundColor=f0f7ff&up_numFish=7&up_fishColor1=f45540&up_fishColor2=f45540&up_fishColor3=f45540&up_fishColor4=f45540&up_fishColor5=f45540&up_fishColor6=f45540&up_fishColor7=f45540&up_fishColor8=f45540&up_fishColor9=f45540&up_fishColor10=f45540"></iframe><h3 id="企鹅">企鹅</h3><p>一些可爱的、小巧的、蹒跚学步的企鹅。</p><iframe width="400" height="300" frameborder="0" src="https://cdn.abowman.com/widgets/penguins/index.html?up_numPenguins=6&up_numBabies=3&up_backgroundColor=ffffff"></iframe><h3 id="海龟">海龟</h3><p>饥饿的宠物海龟在您的主页上玩耍。</p><iframe width="400" height="300" frameborder="0" src="https://cdn.abowman.com/widgets/turtles/?up_waterColor=d0dce5&up_percentWater=0.75&up_groundColor=eeeeee&up_numTurtles=5&up_turtle1LegColor=828250&up_turtle1HeadColor=828250&up_turtle1ShellColor=66663f&up_turtle2LegColor=828250&up_turtle2HeadColor=828250&up_turtle2ShellColor=66663f&up_turtle3LegColor=828250&up_turtle3HeadColor=828250&up_turtle3ShellColor=66663f&up_turtle4LegColor=828250&up_turtle4HeadColor=828250&up_turtle4ShellColor=66663f&up_turtle5LegColor=828250&up_turtle5HeadColor=828250&up_turtle5ShellColor=66663f&up_turtle6LegColor=828250&up_turtle6HeadColor=828250&up_turtle6ShellColor=66663f&up_turtle7LegColor=828250&up_turtle7HeadColor=828250&up_turtle7ShellColor=66663f&up_turtle8LegColor=828250&up_turtle8HeadColor=828250&up_turtle8ShellColor=66663f&up_turtle9LegColor=828250&up_turtle9HeadColor=828250&up_turtle9ShellColor=66663f&up_turtle10LegColor=828250&up_turtle10HeadColor=828250&up_turtle10ShellColor=66663f"></iframe><h3 id="牛顿摆">牛顿摆</h3><p>对于每一个动作，都有一个相等和相反的反应。</p><iframe width="400" height="300" frameborder="0" src="https://cdn.abowman.com/widgets/newtonscradle/?up_numBalls=10&up_bgColor=ffffff&up_ballColor=3c3c3c&up_barColor=3c3c3c&up_stringColor=666666&up_speakerColor=999999"></iframe><hr><blockquote><p>插件来源于网络，已经过作者授权进行使用！插件显示需要Flash支持。插件需要通过鼠标进行操作。<br>插件中含有外部链接，本网站不对其安全性做任何担保。访问链接产生的一切后果由用户一人承担！</p></blockquote>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;一些嵌入式插件，超解压哦！赶快来体验吧！&lt;/p&gt;
-&lt;p&gt;温馨提示：插件加载可能会相对滞后，请耐心等待！&lt;/p&gt;
-&lt;h3 id=&quot;仓鼠&quot;&gt;仓鼠&lt;/h3&gt;
-&lt;p&gt;这只活泼的宠物仓鼠将陪伴您一整天。看着他在他的轮子上奔跑，喝水，并通过点击鼠标吃掉你喂他的食物。点击轮子的中心，让他</summary>
-      
-    
-    
-    
-    <category term="休闲" scheme="https://blog.auriel.top/categories/%E4%BC%91%E9%97%B2/"/>
-    
-    
-    <category term="Flash" scheme="https://blog.auriel.top/tags/Flash/"/>
-    
-    <category term="插件" scheme="https://blog.auriel.top/tags/%E6%8F%92%E4%BB%B6/"/>
     
   </entry>
   

@@ -1,6 +1,7 @@
-https://blog.auriel.top/config.json
 https://blog.auriel.top/vercel.json
 https://blog.auriel.top/pwa/manifest.json
+https://blog.auriel.top/config.json
+https://blog.auriel.top/post/fa97bd48/
 https://blog.auriel.top/post/8097b5e3/
 https://blog.auriel.top/talks/index.html
 https://blog.auriel.top/post/d4550abf/
@@ -59,6 +60,7 @@ https://blog.auriel.top/tags/%E5%9F%9F%E5%90%8D/
 https://blog.auriel.top/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/
 https://blog.auriel.top/tags/CDN/
 https://blog.auriel.top/tags/CMS/
+https://blog.auriel.top/tags/P2P/
 https://blog.auriel.top/categories/%E4%BC%91%E9%97%B2/
 https://blog.auriel.top/categories/AI/
 https://blog.auriel.top/categories/Gridea/
