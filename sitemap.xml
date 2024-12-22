@@ -29,6 +29,15 @@
   </url>
   
   <url>
+    <loc>https://blog.auriel.top/about/index.html</loc>
+    
+    <lastmod>2024-12-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.auriel.top/post/fa97bd48/</loc>
     
     <lastmod>2024-12-22</lastmod>
@@ -275,15 +284,6 @@
     <loc>https://blog.auriel.top/cookies-instructions/index.html</loc>
     
     <lastmod>2021-03-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.auriel.top/about/index.html</loc>
-    
-    <lastmod>2021-01-30</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
