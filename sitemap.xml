@@ -2,15 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://blog.auriel.top/config.json</loc>
-    
-    <lastmod>2024-12-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.auriel.top/vercel.json</loc>
     
     <lastmod>2024-12-22</lastmod>
@@ -21,6 +12,24 @@
   
   <url>
     <loc>https://blog.auriel.top/pwa/manifest.json</loc>
+    
+    <lastmod>2024-12-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.auriel.top/config.json</loc>
+    
+    <lastmod>2024-12-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.auriel.top/categories/index.html</loc>
     
     <lastmod>2024-12-22</lastmod>
     
@@ -138,15 +147,6 @@
   
   <url>
     <loc>https://blog.auriel.top/message/index.html</loc>
-    
-    <lastmod>2023-02-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.auriel.top/categories/index.html</loc>
     
     <lastmod>2023-02-21</lastmod>
     
