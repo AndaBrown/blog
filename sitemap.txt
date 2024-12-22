@@ -1,6 +1,6 @@
+https://blog.auriel.top/config.json
 https://blog.auriel.top/vercel.json
 https://blog.auriel.top/pwa/manifest.json
-https://blog.auriel.top/config.json
 https://blog.auriel.top/post/fa97bd48/
 https://blog.auriel.top/post/8097b5e3/
 https://blog.auriel.top/talks/index.html
