@@ -1,6 +1,7 @@
 https://blog.auriel.top/config.json
 https://blog.auriel.top/vercel.json
 https://blog.auriel.top/pwa/manifest.json
+https://blog.auriel.top/link/index.html
 https://blog.auriel.top/cookies-instructions/index.html
 https://blog.auriel.top/categories/index.html
 https://blog.auriel.top/archives/index.html
@@ -14,7 +15,6 @@ https://blog.auriel.top/post/dd83a796/
 https://blog.auriel.top/post/8097b5e3/
 https://blog.auriel.top/post/f82f332a/
 https://blog.auriel.top/talks/index.html
-https://blog.auriel.top/link/index.html
 https://blog.auriel.top/message/index.html
 https://blog.auriel.top/tags/index.html
 https://blog.auriel.top/post/4a17b156/
@@ -56,8 +56,8 @@ https://blog.auriel.top/tags/GFW/
 https://blog.auriel.top/tags/DNS/
 https://blog.auriel.top/tags/JQuery/
 https://blog.auriel.top/tags/%E5%BB%BA%E7%AB%99/
-https://blog.auriel.top/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/
 https://blog.auriel.top/tags/%E5%9F%9F%E5%90%8D/
+https://blog.auriel.top/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/
 https://blog.auriel.top/tags/CDN/
 https://blog.auriel.top/tags/CMS/
 https://blog.auriel.top/tags/P2P/
