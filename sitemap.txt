@@ -1,9 +1,9 @@
 https://blog.auriel.top/vercel.json
 https://blog.auriel.top/pwa/manifest.json
 https://blog.auriel.top/config.json
+https://blog.auriel.top/post/8097b5e3/
 https://blog.auriel.top/post/f82f332a/
 https://blog.auriel.top/post/fa97bd48/
-https://blog.auriel.top/post/8097b5e3/
 https://blog.auriel.top/talks/index.html
 https://blog.auriel.top/post/d4550abf/
 https://blog.auriel.top/post/ae58d2f1/
