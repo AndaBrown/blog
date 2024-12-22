@@ -1,6 +1,7 @@
+https://blog.auriel.top/config.json
 https://blog.auriel.top/vercel.json
 https://blog.auriel.top/pwa/manifest.json
-https://blog.auriel.top/config.json
+https://blog.auriel.top/post/739f0a30/
 https://blog.auriel.top/post/99c7fa1c/
 https://blog.auriel.top/post/dd83a796/
 https://blog.auriel.top/post/8097b5e3/
@@ -9,7 +10,6 @@ https://blog.auriel.top/post/fa97bd48/
 https://blog.auriel.top/talks/index.html
 https://blog.auriel.top/post/d4550abf/
 https://blog.auriel.top/post/ae58d2f1/
-https://blog.auriel.top/post/739f0a30/
 https://blog.auriel.top/archives/index.html
 https://blog.auriel.top/link/index.html
 https://blog.auriel.top/message/index.html
