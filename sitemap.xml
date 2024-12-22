@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.auriel.top/config.json</loc>
+    
+    <lastmod>2024-12-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.auriel.top/vercel.json</loc>
     
     <lastmod>2024-12-22</lastmod>
@@ -20,7 +29,7 @@
   </url>
   
   <url>
-    <loc>https://blog.auriel.top/config.json</loc>
+    <loc>https://blog.auriel.top/post/fa97bd48/</loc>
     
     <lastmod>2024-12-22</lastmod>
     
@@ -86,15 +95,6 @@
     <loc>https://blog.auriel.top/post/f82f332a/</loc>
     
     <lastmod>2024-12-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.auriel.top/post/fa97bd48/</loc>
-    
-    <lastmod>2024-09-16</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
