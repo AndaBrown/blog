@@ -392,13 +392,6 @@
   </url>
   
   <url>
-    <loc>https://blog.auriel.top/tags/%E5%8F%B3%E9%94%AE%E8%8F%9C%E5%8D%95/</loc>
-    <lastmod>2025-09-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.auriel.top/tags/css/</loc>
     <lastmod>2025-09-29</lastmod>
     <changefreq>weekly</changefreq>
@@ -414,6 +407,13 @@
   
   <url>
     <loc>https://blog.auriel.top/tags/%E7%BD%91%E9%A1%B5%E6%BA%90%E7%A0%81/</loc>
+    <lastmod>2025-09-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.auriel.top/tags/%E5%8F%B3%E9%94%AE%E8%8F%9C%E5%8D%95/</loc>
     <lastmod>2025-09-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
