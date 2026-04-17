@@ -29,6 +29,15 @@
   </url>
   
   <url>
+    <loc>https://blog.auriel.top/post/454446b9/</loc>
+    
+    <lastmod>2026-04-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.auriel.top/post/48bc1675/</loc>
     
     <lastmod>2025-10-22</lastmod>
@@ -572,6 +581,13 @@
   
   <url>
     <loc>https://blog.auriel.top/categories/%E7%BD%91%E9%A1%B5%E6%BA%90%E7%A0%81/</loc>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.auriel.top/categories/%E8%AE%B0%E5%BD%95/</loc>
     <lastmod>2026-04-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

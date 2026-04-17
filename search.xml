@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>RelayGo代码实现与思考</title>
+      <link href="/post/454446b9/"/>
+      <url>/post/454446b9/</url>
+      
+        <content type="html"><![CDATA[<p>由于 Telegram 上逐渐涌现了一批给私聊机器人发广告的人，现有的私聊机器人无法解决“反垃圾”功能。为此，我写了一个 <strong>支持联合封禁功能</strong> 的 Serverless 方案 —— RelayGo ，支持自部署或集中托管两种使用方式。</p><p>本文作为实现方式和解决工程化问题的思考及记录。</p><h2 id="项目介绍">项目介绍</h2><p>RelayGo 是新一代 Telegram 私聊机器人，支持人机验证、联合封禁、自定义欢迎消息和自动回复等多个功能。</p><p>机器人采用 Serverless 架构，使用 JavaScript 编写，无需服务器即可部署，简单而强大！</p><p>项目具体功能介绍和部署教程请参见： <a href="https://github.com/abcxyz-123456/RelayGo">开源地址</a> 。</p><h2 id="代码实现">代码实现</h2><p>RelayGo 基于 Telegram Topics 机制实现「私聊 → 群组话题」的消息桥接。每个用户对应一个独立话题，实现类似客服系统的体验。</p><p><strong>完整技术栈</strong>：</p><ul><li>Cloudflare Workers：机器人基础功能实现</li><li>Workers KV：本地数据存储及缓存</li><li>Cloudflare D1：集中托管的token数据表</li><li>Deno Deploy+KV：联合封禁名单实现</li><li>Cron Job：定期检查验证名单</li></ul><h2 id="工程化问题">工程化问题</h2><ol><li><p>机器人代码已经开源，如何保证不会有人使用开源版本的代码恶意写入联合封禁名单？</p><p>联合封禁功能为中心化存储，并集中处理。所有机器人在使用联合封禁功能时，都会调用由 @RelayVerifyBot 处理的 Cloudflare Turnstile 网页，验证状态和黑名单均集中管理。自部署机器人只读取，不主动写入。</p></li><li><p>WebApp 的链接是对用户可见的，如何防止 WebApp 链接转发和代验证？</p><p>WebApp 打开时强制校验传入的参数和用户的实际打开的 ID，如果用户 ID 与传入的参数不一致，将触发风控。</p></li><li><p>如何实现定时封禁同时防止恶意调用验证接口封禁本不应该封禁的用户？</p><p>考虑到开源代码暴漏了接口参数格式，可能会允许普通用户通过接口请求多次验证。联合封禁的查验逻辑采用强校验逻辑：只有 ID 校验通过的用户打开对应的 WebApp 才会触发验证计时流程。打开后 10 分钟内没有完成验证才会被封禁。</p></li><li><p>Deno Cron 的冷启动时间过长，如何保证 Cron 任务可以正确执行？</p><p>我们引入了第三方服务 Cron Job 作为辅助，每 10 分钟执行一次验证名单检测，把所有 10 分钟前已经开始验证但现在还没有通过的用户加入联合封禁名单。</p></li><li><p>Workers KV 额度有限，D1 读写速度远不如 KV，如何平衡？</p><p>对于集中托管方案，我们把机器人token和会话以数据表的格式写入 D1，Workers KV 作为热缓存层，缓存最近的会话 ID，加快响应速度。</p><p>对于自部署方案，由于数据量较小，我们使用 Workers KV 作为主要的数据存储方式，所有数据全部储存在 KV ，效率更高。</p></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 记录 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>比特币交易机制：UTXO模型与ECDSA算法</title>
       <link href="/post/48bc1675/"/>
       <url>/post/48bc1675/</url>
