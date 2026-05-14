@@ -522,6 +522,13 @@
   </url>
   
   <url>
+    <loc>https://blog.auriel.top/tags/CMS/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.auriel.top/tags/%E5%8C%BA%E5%9D%97%E9%93%BE/</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>weekly</changefreq>
@@ -537,13 +544,6 @@
   
   <url>
     <loc>https://blog.auriel.top/tags/P2P/</loc>
-    <lastmod>2026-05-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.auriel.top/tags/CMS/</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
