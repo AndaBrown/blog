@@ -349,27 +349,6 @@
   </url>
   
   <url>
-    <loc>https://blog.auriel.top/tags/AI/</loc>
-    <lastmod>2026-06-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.auriel.top/tags/Bing/</loc>
-    <lastmod>2026-06-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.auriel.top/tags/%E5%88%86%E4%BA%AB/</loc>
-    <lastmod>2026-06-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.auriel.top/tags/Gridea/</loc>
     <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
@@ -392,6 +371,27 @@
   
   <url>
     <loc>https://blog.auriel.top/tags/%E5%8A%A0%E8%BD%BD%E5%8A%A8%E7%94%BB/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.auriel.top/tags/AI/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.auriel.top/tags/Bing/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.auriel.top/tags/%E5%88%86%E4%BA%AB/</loc>
     <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -454,6 +454,13 @@
   </url>
   
   <url>
+    <loc>https://blog.auriel.top/tags/BUG/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.auriel.top/tags/Aplayer/</loc>
     <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
@@ -462,13 +469,6 @@
   
   <url>
     <loc>https://blog.auriel.top/tags/MetingJS/</loc>
-    <lastmod>2026-06-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.auriel.top/tags/BUG/</loc>
     <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -496,14 +496,14 @@
   </url>
   
   <url>
-    <loc>https://blog.auriel.top/tags/%E6%97%A5%E5%B8%B8/</loc>
+    <loc>https://blog.auriel.top/tags/JQuery/</loc>
     <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.auriel.top/tags/JQuery/</loc>
+    <loc>https://blog.auriel.top/tags/%E6%97%A5%E5%B8%B8/</loc>
     <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -531,6 +531,13 @@
   </url>
   
   <url>
+    <loc>https://blog.auriel.top/tags/CMS/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.auriel.top/tags/CDN/</loc>
     <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
@@ -546,13 +553,6 @@
   
   <url>
     <loc>https://blog.auriel.top/tags/%E5%8A%A0%E5%AF%86%E8%B4%A7%E5%B8%81/</loc>
-    <lastmod>2026-06-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.auriel.top/tags/CMS/</loc>
     <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -575,14 +575,14 @@
   </url>
   
   <url>
-    <loc>https://blog.auriel.top/categories/AI/</loc>
+    <loc>https://blog.auriel.top/categories/Gridea/</loc>
     <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.auriel.top/categories/Gridea/</loc>
+    <loc>https://blog.auriel.top/categories/AI/</loc>
     <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
